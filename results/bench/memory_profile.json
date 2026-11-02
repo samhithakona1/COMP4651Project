@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-11-02T12:28:34+00:00",
+  "stages": {
+    "idle": {
+      "seconds": 30.0,
+      "returncode": 0,
+      "samples": 14,
+      "peak_mb_by_service": {
+        "airflow-webserver": 743.4,
+        "airflow-scheduler": 303.3,
+        "streamlit": 49.4,
+        "postgres": 66.1
+      },
+      "peak_total_mb": 1161.7
+    },
+    "ingest": {
+      "seconds": 15.3,
+      "returncode": 0,
+      "samples": 8,
+      "peak_mb_by_service": {
+        "airflow-webserver": 743.1,
+        "airflow-scheduler": 351.6,
+        "streamlit": 49.4,
+        "postgres": 70.6
+      },
+      "peak_total_mb": 1214.4
+    },
+    "transform": {
+      "seconds": 110.2,
+      "returncode": 0,
+      "samples": 55,
+      "peak_mb_by_service": {
+        "airflow-webserver": 743.8,
+        "airflow-scheduler": 2648.1,
+        "streamlit": 49.4,
+        "postgres": 72.6
+      },
+      "peak_total_mb": 3512.9
+    },
+    "load": {
+      "seconds": 5.6,
+      "returncode": 0,
+      "samples": 2,
+      "peak_mb_by_service": {
+        "airflow-webserver": 743.4,
+        "airflow-scheduler": 577.8,
+        "streamlit": 49.4,
+        "postgres": 208.3
+      },
+      "peak_total_mb": 1526.4
+    },
+    "dashboard": {
+      "seconds": 32.4,
+      "returncode": 0,
+      "samples": 18,
+      "peak_mb_by_service": {
+        "airflow-webserver": 743.4,
+        "airflow-scheduler": 391.8,
+        "streamlit": 307.8,
+        "postgres": 349.6
+      },
+      "peak_total_mb": 1792.2
+    }
+  },
+  "overall_peak_total_mb": 3512.9,
+  "streamlit_steady_state_mb": 196.1,
+  "note": "Per-service peaks can occur at different moments; peak_total_mb is the largest sum over services within one sample. Docker reports cgroup memory (RSS + page cache)."
+}

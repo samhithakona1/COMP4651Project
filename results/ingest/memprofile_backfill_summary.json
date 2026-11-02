@@ -1,0 +1,141 @@
+{
+  "from": "2025-11",
+  "http": {
+    "cache_hits": 0,
+    "failures": 0,
+    "requests": 50,
+    "retries": 0
+  },
+  "months_failed_gate": [],
+  "months_missing_thread": [],
+  "months_requested": 12,
+  "months_with_thread": 12,
+  "per_month": [
+    {
+      "author": "whoishiring",
+      "fetched": 579,
+      "gate": "passed",
+      "kept": 391,
+      "month": "2025-11",
+      "story_id": 45800465,
+      "title": "Ask HN: Who is hiring? (November 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 545,
+      "gate": "passed",
+      "kept": 377,
+      "month": "2025-12",
+      "story_id": 46108941,
+      "title": "Ask HN: Who is hiring? (December 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 402,
+      "gate": "passed",
+      "kept": 256,
+      "month": "2026-01",
+      "story_id": 46466074,
+      "title": "Ask HN: Who is hiring? (January 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 592,
+      "gate": "passed",
+      "kept": 410,
+      "month": "2026-02",
+      "story_id": 46857488,
+      "title": "Ask HN: Who is hiring? (February 2026)",
+      "warnings": [
+        "row count 410 differs from previous month (256) by 60% > 60%"
+      ]
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 462,
+      "gate": "passed",
+      "kept": 317,
+      "month": "2026-03",
+      "story_id": 47219668,
+      "title": "Ask HN: Who is hiring? (March 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 457,
+      "gate": "passed",
+      "kept": 328,
+      "month": "2026-04",
+      "story_id": 47601859,
+      "title": "Ask HN: Who is hiring? (April 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 542,
+      "gate": "passed",
+      "kept": 317,
+      "month": "2026-05",
+      "story_id": 47975571,
+      "title": "Ask HN: Who is hiring? (May 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 489,
+      "gate": "passed",
+      "kept": 312,
+      "month": "2026-06",
+      "story_id": 48357725,
+      "title": "Ask HN: Who is hiring? (June 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 417,
+      "gate": "passed",
+      "kept": 257,
+      "month": "2026-07",
+      "story_id": 48747976,
+      "title": "Ask HN: Who is hiring? (July 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 372,
+      "gate": "passed",
+      "kept": 226,
+      "month": "2026-08",
+      "story_id": 49156683,
+      "title": "Ask HN: Who is hiring? (August 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 389,
+      "gate": "passed",
+      "kept": 248,
+      "month": "2026-09",
+      "story_id": 49522897,
+      "title": "Ask HN: Who is hiring? (September 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 391,
+      "gate": "passed",
+      "kept": 261,
+      "month": "2026-10",
+      "story_id": 49922569,
+      "title": "Ask HN: Who is hiring? (October 2026)",
+      "warnings": []
+    }
+  ],
+  "run_at": "2026-11-02T12:26:04+00:00",
+  "to": "2026-10",
+  "total_comments_fetched": 5637,
+  "total_postings_kept": 3700
+}

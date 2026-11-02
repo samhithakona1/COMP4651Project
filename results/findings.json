@@ -1,0 +1,740 @@
+{
+  "data_volume": {
+    "ingest": {
+      "from": "2011-01",
+      "months_missing_thread": [
+        "2011-01",
+        "2011-02",
+        "2011-03"
+      ],
+      "months_requested": 190,
+      "months_with_thread": 187,
+      "to": "2026-10",
+      "total_comments_fetched": 121122,
+      "total_postings_kept": 94951
+    },
+    "processing": {
+      "hn": {
+        "postings": 94951,
+        "salary_non_usd": 1637,
+        "salary_out_of_range": 407,
+        "source": "hn",
+        "with_ge1_skill": 71295,
+        "with_ge2_skills": 58350,
+        "with_salary_usd": 6160
+      },
+      "remotive": {
+        "postings": 12,
+        "salary_non_usd": 0,
+        "salary_out_of_range": 2,
+        "source": "remotive",
+        "with_ge1_skill": 6,
+        "with_ge2_skills": 5,
+        "with_salary_usd": 6
+      }
+    },
+    "warehouse_hn": {
+      "companies": 23959,
+      "first_date": "2011-04-01",
+      "last_date": "2026-10-15",
+      "postings": 94951,
+      "salary_coverage": 0.06487556739792104,
+      "with_ge2_skills": 58350,
+      "with_salary_usd": 6160
+    }
+  },
+  "generated_at": "2026-11-02T12:28:57+00:00",
+  "q1_skill_premium": {
+    "latest_year_with_both": {
+      "legacy_median": 185000.0,
+      "legacy_postings": 141.0,
+      "legacy_salary_n": 52.0,
+      "modern_median": 186000.0,
+      "modern_postings": 598.0,
+      "modern_premium_pct": 0.00540540540540535,
+      "modern_salary_n": 159.0,
+      "year": 2026
+    },
+    "legacy": [
+      "PHP",
+      "Ruby on Rails",
+      "Java Spring"
+    ],
+    "modern": [
+      "Rust",
+      "Go",
+      "Kubernetes"
+    ],
+    "note": "medians need >= 20 salaried postings; model effects are percentage differences in posted pay holding other skills, modality, level and year fixed.",
+    "per_skill": {
+      "Go": {
+        "first_year": 2011,
+        "first_year_share": 0.00398406374501992,
+        "latest_year": 2026,
+        "latest_year_median_salary": 185000.0,
+        "latest_year_postings": 200,
+        "latest_year_salary_n": 49,
+        "latest_year_share": 0.06821282401091405,
+        "model_effect": {
+          "coef": 0.05833472325489818,
+          "p_value": 6.2010765638922844e-06,
+          "pct_ci_high": 0.08722993899477417,
+          "pct_ci_low": 0.033588083984945796,
+          "pct_effect": 0.06006976633459279,
+          "std_err": 0.012907583061239652
+        },
+        "peak_share_year": 2022
+      },
+      "Java Spring": {
+        "first_year": 2011,
+        "first_year_share": 0.0022766078542970974,
+        "latest_year": 2026,
+        "latest_year_median_salary": null,
+        "latest_year_postings": 12,
+        "latest_year_salary_n": 3,
+        "latest_year_share": 0.004092769440654843,
+        "model_effect": null,
+        "peak_share_year": 2020
+      },
+      "Kubernetes": {
+        "first_year": 2014,
+        "first_year_share": 0.000463284688441047,
+        "latest_year": 2026,
+        "latest_year_median_salary": 186250.0,
+        "latest_year_postings": 285,
+        "latest_year_salary_n": 80,
+        "latest_year_share": 0.09720327421555253,
+        "model_effect": {
+          "coef": -0.06796178493829805,
+          "p_value": 1.2226712282461243e-05,
+          "pct_ci_high": -0.036810457221808965,
+          "pct_ci_low": -0.09373045725715563,
+          "pct_effect": -0.06570382291894156,
+          "std_err": 0.01553943028637488
+        },
+        "peak_share_year": 2022
+      },
+      "PHP": {
+        "first_year": 2011,
+        "first_year_share": 0.12066021627774616,
+        "latest_year": 2026,
+        "latest_year_median_salary": null,
+        "latest_year_postings": 34,
+        "latest_year_salary_n": 11,
+        "latest_year_share": 0.011596180081855388,
+        "model_effect": {
+          "coef": -0.03971317912696679,
+          "p_value": 0.20497120339808184,
+          "pct_ci_high": 0.021932541569845285,
+          "pct_ci_low": -0.09617709702036115,
+          "pct_effect": -0.038934946857904926,
+          "std_err": 0.031331525947729415
+        },
+        "peak_share_year": 2011
+      },
+      "Ruby on Rails": {
+        "first_year": 2011,
+        "first_year_share": 0.1553784860557769,
+        "latest_year": 2026,
+        "latest_year_median_salary": 189000.0,
+        "latest_year_postings": 102,
+        "latest_year_salary_n": 43,
+        "latest_year_share": 0.034788540245566164,
+        "model_effect": {
+          "coef": -0.02259644382332872,
+          "p_value": 0.33954321622766115,
+          "pct_ci_high": 0.024060227341285646,
+          "pct_ci_low": -0.06664366607298648,
+          "pct_effect": -0.022343056327156042,
+          "std_err": 0.02365950846026487
+        },
+        "peak_share_year": 2012
+      },
+      "Rust": {
+        "first_year": 2014,
+        "first_year_share": 0.0002316423442205235,
+        "latest_year": 2026,
+        "latest_year_median_salary": 186000.0,
+        "latest_year_postings": 256,
+        "latest_year_salary_n": 58,
+        "latest_year_share": 0.08731241473396999,
+        "model_effect": {
+          "coef": 0.06253188080773046,
+          "p_value": 0.0007441863046155838,
+          "pct_ci_high": 0.10392293022061169,
+          "pct_ci_low": 0.026539693780765504,
+          "pct_effect": 0.06452839640200866,
+          "std_err": 0.01854026671623715
+        },
+        "peak_share_year": 2026
+      }
+    },
+    "skills": [
+      "Rust",
+      "Go",
+      "Kubernetes",
+      "PHP",
+      "Ruby on Rails",
+      "Java Spring"
+    ]
+  },
+  "q2_genai_shift": {
+    "adjusted_premium_since_2023": {
+      "coef": -0.08532533824312549,
+      "controls": "experience level, work modality, year fixed effects; HC1 SEs",
+      "n_genai": 76,
+      "n_obs": 2549,
+      "p_value": 0.13052683712906288,
+      "pct_ci_high": 0.025599714813193754,
+      "pct_ci_low": -0.17792874732990335,
+      "pct_effect": -0.08178649416675642,
+      "std_err": 0.056431071301063625
+    },
+    "first_quarter": {
+      "label": "2023Q1",
+      "postings": 1205,
+      "share": 0.00995850622406639
+    },
+    "frameworks": [
+      "vLLM",
+      "LangChain",
+      "LlamaIndex",
+      "PyTorch",
+      "Hugging Face",
+      "Triton"
+    ],
+    "from_year": 2023,
+    "latest_quarter": {
+      "label": "2026Q4",
+      "postings": 261,
+      "share": 0.03065134099616858
+    },
+    "peak_quarter": {
+      "genai_share": 0.049247606019151846,
+      "quarter_label": "2026Q3"
+    },
+    "raw_median_premium_since_2023": {
+      "genai_median": 175000.0,
+      "genai_n": 76,
+      "other_median": 172500.0,
+      "other_n": 2473,
+      "pct": 0.01449275362318847
+    }
+  },
+  "q3_remote_penalty": {
+    "adjusted_vs_hybrid": {
+      "Onsite": {
+        "coef": 0.012387759744210332,
+        "p_value": 0.4752978678916926,
+        "pct_ci_high": 0.04749143373384035,
+        "pct_ci_low": -0.02139058126774106,
+        "pct_effect": 0.012464805854156118,
+        "std_err": 0.017352581723467382
+      },
+      "Remote": {
+        "coef": -0.06645208732687144,
+        "p_value": 2.9136184688240128e-05,
+        "pct_ci_high": -0.03467858867274674,
+        "pct_ci_low": -0.0929974435456243,
+        "pct_effect": -0.06429225295824088,
+        "std_err": 0.015897191584803485
+      },
+      "Unspecified": {
+        "coef": -0.014369170128975732,
+        "p_value": 0.5688075218521476,
+        "pct_ci_high": 0.03567801218462949,
+        "pct_ci_low": -0.0618023489213429,
+        "pct_effect": -0.014266426307071454,
+        "std_err": 0.025217538178512015
+      }
+    },
+    "latest_year": 2026,
+    "model_n_obs": 6006,
+    "raw_latest_year": {
+      "Hybrid": {
+        "median": 192500.0,
+        "postings": 433,
+        "salary_n": 96
+      },
+      "Onsite": {
+        "median": 191250.0,
+        "postings": 697,
+        "salary_n": 192
+      },
+      "Remote": {
+        "median": 175000.0,
+        "postings": 1544,
+        "salary_n": 412
+      },
+      "Unspecified": {
+        "median": 200000.0,
+        "postings": 258,
+        "salary_n": 33
+      }
+    },
+    "remotive_sanity_check": {
+      "median": 63500.0,
+      "note": "Remotive snapshot is small and delayed; used only as a sanity check",
+      "postings": 12,
+      "salary_n": 6
+    }
+  },
+  "q4_skill_clusters": {
+    "cluster_stability": [
+      {
+        "from": 2011,
+        "jaccard_comembership": 0.152,
+        "to": 2012
+      },
+      {
+        "from": 2012,
+        "jaccard_comembership": 0.15942028985507245,
+        "to": 2013
+      },
+      {
+        "from": 2013,
+        "jaccard_comembership": 0.19767441860465115,
+        "to": 2014
+      },
+      {
+        "from": 2014,
+        "jaccard_comembership": 0.2748091603053435,
+        "to": 2015
+      },
+      {
+        "from": 2015,
+        "jaccard_comembership": 0.2858757062146893,
+        "to": 2016
+      },
+      {
+        "from": 2016,
+        "jaccard_comembership": 0.25480283114256824,
+        "to": 2017
+      },
+      {
+        "from": 2017,
+        "jaccard_comembership": 0.3077720207253886,
+        "to": 2018
+      },
+      {
+        "from": 2018,
+        "jaccard_comembership": 0.25689819219790677,
+        "to": 2019
+      },
+      {
+        "from": 2019,
+        "jaccard_comembership": 0.16699410609037327,
+        "to": 2020
+      },
+      {
+        "from": 2020,
+        "jaccard_comembership": 0.23692307692307693,
+        "to": 2021
+      },
+      {
+        "from": 2021,
+        "jaccard_comembership": 0.2776617954070981,
+        "to": 2022
+      },
+      {
+        "from": 2022,
+        "jaccard_comembership": 0.214168039538715,
+        "to": 2023
+      },
+      {
+        "from": 2023,
+        "jaccard_comembership": 0.24691358024691357,
+        "to": 2024
+      },
+      {
+        "from": 2024,
+        "jaccard_comembership": 0.13370473537604458,
+        "to": 2025
+      },
+      {
+        "from": 2025,
+        "jaccard_comembership": 0.17846153846153845,
+        "to": 2026
+      }
+    ],
+    "clusters_by_year_count": {
+      "2011": 4,
+      "2012": 4,
+      "2013": 6,
+      "2014": 5,
+      "2015": 7,
+      "2016": 7,
+      "2017": 10,
+      "2018": 8,
+      "2019": 9,
+      "2020": 9,
+      "2021": 8,
+      "2022": 10,
+      "2023": 8,
+      "2024": 7,
+      "2025": 7,
+      "2026": 6
+    },
+    "clusters_overall": [
+      {
+        "edges": 341,
+        "mean_pairwise_lift": 3.521728248902926,
+        "members": [
+          "Angular",
+          "Ansible",
+          "Backbone.js",
+          "Bootstrap",
+          "Chef",
+          "ClickHouse",
+          "Cloudflare",
+          "D3.js",
+          "Django",
+          "Elasticsearch",
+          "Ember.js",
+          "Flask",
+          "Heroku",
+          "JavaScript",
+          "Laravel",
+          "Linux",
+          "Lua",
+          "Memcached",
+          "MongoDB",
+          "MySQL",
+          "Neo4j",
+          "Nginx",
+          "PHP",
+          "Perl",
+          "PostgreSQL",
+          "Puppet",
+          "RabbitMQ",
+          "Rails Hotwire",
+          "Redis",
+          "Ruby",
+          "Ruby on Rails",
+          "Shell/Bash",
+          "Symfony",
+          "Vagrant",
+          "Webpack",
+          "jQuery"
+        ],
+        "size": 36
+      },
+      {
+        "edges": 222,
+        "mean_pairwise_lift": 3.1682062240513638,
+        "members": [
+          "AWS",
+          "Argo CD",
+          "CircleCI",
+          "Datadog",
+          "Docker",
+          "DuckDB",
+          "DynamoDB",
+          "Electron",
+          "Elixir",
+          "Envoy",
+          "Express",
+          "Firebase",
+          "Fivetran",
+          "Go",
+          "GraphQL",
+          "Helm",
+          "Istio",
+          "Kinesis",
+          "Kotlin",
+          "Kubernetes",
+          "Node.js",
+          "Nuxt",
+          "Objective-C",
+          "Phoenix",
+          "React",
+          "React Native",
+          "Redux",
+          "Serverless",
+          "Solidity",
+          "Svelte",
+          "Swift",
+          "TimescaleDB",
+          "TypeScript",
+          "Vue.js",
+          "WebRTC",
+          "eBPF"
+        ],
+        "size": 36
+      },
+      {
+        "edges": 76,
+        "mean_pairwise_lift": 13.168379535898397,
+        "members": [
+          "CUDA",
+          "Computer Vision",
+          "Deep Learning",
+          "Hugging Face",
+          "Keras",
+          "MLOps",
+          "Machine Learning",
+          "NLP",
+          "NumPy",
+          "Pandas",
+          "Parquet",
+          "PyTorch",
+          "Python",
+          "Qt",
+          "Reinforcement Learning",
+          "SageMaker",
+          "TensorFlow",
+          "XGBoost",
+          "scikit-learn"
+        ],
+        "size": 19
+      },
+      {
+        "edges": 31,
+        "mean_pairwise_lift": 9.937651206710065,
+        "members": [
+          ".NET",
+          "Azure",
+          "C",
+          "C#",
+          "C++",
+          "Fortran",
+          "Julia",
+          "MATLAB",
+          "Oracle DB",
+          "R",
+          "SQL",
+          "SQL Server",
+          "SQLite",
+          "Tableau"
+        ],
+        "size": 14
+      },
+      {
+        "edges": 42,
+        "mean_pairwise_lift": 11.26860225404456,
+        "members": [
+          "Apache Spark",
+          "Cassandra",
+          "Druid",
+          "Erlang",
+          "Flink",
+          "Groovy",
+          "Hadoop",
+          "Hive",
+          "Java",
+          "Java Spring",
+          "Kafka",
+          "Presto/Trino",
+          "Scala"
+        ],
+        "size": 13
+      },
+      {
+        "edges": 18,
+        "mean_pairwise_lift": 20.54392654298178,
+        "members": [
+          "Anthropic Claude",
+          "FastAPI",
+          "Generative AI",
+          "LLM",
+          "LangChain",
+          "Next.js",
+          "OpenAI API",
+          "RAG",
+          "Supabase",
+          "Tailwind",
+          "Vercel"
+        ],
+        "size": 11
+      },
+      {
+        "edges": 16,
+        "mean_pairwise_lift": 26.83460209644796,
+        "members": [
+          "Airflow",
+          "Apache Beam",
+          "BigQuery",
+          "Databricks",
+          "GCP",
+          "Looker",
+          "Redshift",
+          "Snowflake",
+          "dbt"
+        ],
+        "size": 9
+      },
+      {
+        "edges": 27,
+        "mean_pairwise_lift": 13.826104096780908,
+        "members": [
+          "CI/CD",
+          "Elm",
+          "Git",
+          "GitHub Actions",
+          "Grafana",
+          "Jenkins",
+          "OpenStack",
+          "Prometheus",
+          "gRPC"
+        ],
+        "size": 9
+      },
+      {
+        "edges": 13,
+        "mean_pairwise_lift": 22.29947263608341,
+        "members": [
+          "Clojure",
+          "F#",
+          "Haskell",
+          "OCaml",
+          "Rust",
+          "Scheme/Racket",
+          "WebAssembly"
+        ],
+        "size": 7
+      },
+      {
+        "edges": 6,
+        "mean_pairwise_lift": 151.14282960178554,
+        "members": [
+          "Consul",
+          "Nomad",
+          "Terraform",
+          "Vault"
+        ],
+        "size": 4
+      },
+      {
+        "edges": 2,
+        "mean_pairwise_lift": 52.99680492788197,
+        "members": [
+          "Three.js",
+          "Unity",
+          "Unreal Engine"
+        ],
+        "size": 3
+      },
+      {
+        "edges": 1,
+        "mean_pairwise_lift": 116.83198380566802,
+        "members": [
+          "Dart",
+          "Flutter"
+        ],
+        "size": 2
+      },
+      {
+        "edges": 1,
+        "mean_pairwise_lift": 89.18006129213835,
+        "members": [
+          "CloudFormation",
+          "Pulumi"
+        ],
+        "size": 2
+      }
+    ],
+    "method": "Louvain (networkx, seed 4651) on the lift > 1 graph weighted by lift; pairs need n_ab >= the build's min_pair_count; yearly clusters only for years with >= 1000 postings",
+    "min_pair_count": 30,
+    "n_pairs_overall": 3488,
+    "n_postings_with_skill": 71295,
+    "top_pairs_by_lift": [
+      {
+        "confidence_a_to_b": 0.49411764705882355,
+        "confidence_b_to_a": 0.39622641509433965,
+        "lift": 332.3407325194229,
+        "pair_count": 42,
+        "skill_a": "Nomad",
+        "skill_b": "Vault",
+        "support": 0.000589101620029455
+      },
+      {
+        "confidence_a_to_b": 0.35294117647058826,
+        "confidence_b_to_a": 0.5647058823529412,
+        "lift": 296.03460207612454,
+        "pair_count": 48,
+        "skill_a": "Consul",
+        "skill_b": "Nomad",
+        "support": 0.0006732589943193772
+      },
+      {
+        "confidence_a_to_b": 0.33088235294117646,
+        "confidence_b_to_a": 0.42452830188679247,
+        "lift": 222.54959766925637,
+        "pair_count": 45,
+        "skill_a": "Consul",
+        "skill_b": "Vault",
+        "support": 0.0006311803071744162
+      },
+      {
+        "confidence_a_to_b": 0.1732283464566929,
+        "confidence_b_to_a": 0.4583333333333333,
+        "lift": 128.64911417322836,
+        "pair_count": 44,
+        "skill_a": "Hive",
+        "skill_b": "Presto/Trino",
+        "support": 0.0006171540781260958
+      },
+      {
+        "confidence_a_to_b": 0.6538461538461539,
+        "confidence_b_to_a": 0.17042606516290726,
+        "lift": 116.83198380566802,
+        "pair_count": 68,
+        "skill_a": "Dart",
+        "skill_b": "Flutter",
+        "support": 0.0009537835752857844
+      },
+      {
+        "confidence_a_to_b": 0.3128491620111732,
+        "confidence_b_to_a": 0.23829787234042554,
+        "lift": 94.91311066207061,
+        "pair_count": 56,
+        "skill_a": "OCaml",
+        "skill_b": "Scheme/Racket",
+        "support": 0.0007854688267059401
+      },
+      {
+        "confidence_a_to_b": 0.22140221402214022,
+        "confidence_b_to_a": 0.3389830508474576,
+        "lift": 89.18006129213835,
+        "pair_count": 60,
+        "skill_a": "CloudFormation",
+        "skill_b": "Pulumi",
+        "support": 0.0008415737428992215
+      },
+      {
+        "confidence_a_to_b": 0.5657894736842105,
+        "confidence_b_to_a": 0.4613733905579399,
+        "lift": 86.56214705217981,
+        "pair_count": 215,
+        "skill_a": "Grafana",
+        "skill_b": "Prometheus",
+        "support": 0.0030156392453888773
+      },
+      {
+        "confidence_a_to_b": 0.42124542124542125,
+        "confidence_b_to_a": 0.2882205513784461,
+        "lift": 75.26990553306342,
+        "pair_count": 115,
+        "skill_a": "Anthropic Claude",
+        "skill_b": "OpenAI API",
+        "support": 0.0016130163405568413
+      },
+      {
+        "confidence_a_to_b": 0.8142857142857143,
+        "confidence_b_to_a": 0.22093023255813954,
+        "lift": 75.00581395348837,
+        "pair_count": 171,
+        "skill_a": "Keras",
+        "skill_b": "TensorFlow",
+        "support": 0.0023984851672627814
+      }
+    ]
+  },
+  "salary_model": {
+    "adj_r2": 0.21890773002071195,
+    "fitted_at": "2026-11-02T12:28:55+00:00",
+    "latest_year": 2026,
+    "n_obs": 6006,
+    "r2": 0.22593170713626254
+  }
+}

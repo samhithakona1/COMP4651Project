@@ -1,0 +1,142 @@
+{
+  "by_source": {
+    "hn": {
+      "postings": 94951,
+      "salary_non_usd": 1637,
+      "salary_out_of_range": 407,
+      "source": "hn",
+      "with_ge1_skill": 71295,
+      "with_ge2_skills": 58350,
+      "with_salary_usd": 6160
+    },
+    "remotive": {
+      "postings": 12,
+      "salary_non_usd": 0,
+      "salary_out_of_range": 2,
+      "source": "remotive",
+      "with_ge1_skill": 6,
+      "with_ge2_skills": 5,
+      "with_salary_usd": 6
+    }
+  },
+  "dropped_out_of_date_range": 0,
+  "hn_by_thread_year": [
+    {
+      "postings": 1757,
+      "with_ge2_skills": 836,
+      "with_salary_usd": 3,
+      "year": 2011
+    },
+    {
+      "postings": 2594,
+      "with_ge2_skills": 1466,
+      "with_salary_usd": 17,
+      "year": 2012
+    },
+    {
+      "postings": 3432,
+      "with_ge2_skills": 2030,
+      "with_salary_usd": 47,
+      "year": 2013
+    },
+    {
+      "postings": 4317,
+      "with_ge2_skills": 2785,
+      "with_salary_usd": 57,
+      "year": 2014
+    },
+    {
+      "postings": 7245,
+      "with_ge2_skills": 4279,
+      "with_salary_usd": 153,
+      "year": 2015
+    },
+    {
+      "postings": 8020,
+      "with_ge2_skills": 4959,
+      "with_salary_usd": 369,
+      "year": 2016
+    },
+    {
+      "postings": 9426,
+      "with_ge2_skills": 6013,
+      "with_salary_usd": 525,
+      "year": 2017
+    },
+    {
+      "postings": 9687,
+      "with_ge2_skills": 6273,
+      "with_salary_usd": 768,
+      "year": 2018
+    },
+    {
+      "postings": 8439,
+      "with_ge2_skills": 5502,
+      "with_salary_usd": 426,
+      "year": 2019
+    },
+    {
+      "postings": 7124,
+      "with_ge2_skills": 4406,
+      "with_salary_usd": 247,
+      "year": 2020
+    },
+    {
+      "postings": 10276,
+      "with_ge2_skills": 6527,
+      "with_salary_usd": 429,
+      "year": 2021
+    },
+    {
+      "postings": 7582,
+      "with_ge2_skills": 4727,
+      "with_salary_usd": 511,
+      "year": 2022
+    },
+    {
+      "postings": 4168,
+      "with_ge2_skills": 2377,
+      "with_salary_usd": 464,
+      "year": 2023
+    },
+    {
+      "postings": 3920,
+      "with_ge2_skills": 2177,
+      "with_salary_usd": 588,
+      "year": 2024
+    },
+    {
+      "postings": 4032,
+      "with_ge2_skills": 2319,
+      "with_salary_usd": 823,
+      "year": 2025
+    },
+    {
+      "postings": 2932,
+      "with_ge2_skills": 1674,
+      "with_salary_usd": 733,
+      "year": 2026
+    }
+  ],
+  "min_pair_count": 30,
+  "months": "all",
+  "postings_parsed_this_run": 94963,
+  "run_at": "2026-11-02T12:27:54+00:00",
+  "seconds": {
+    "gold": 9.99,
+    "silver": 97.22
+  },
+  "skill_mode": "builtin",
+  "spark_master": "local[4]",
+  "spark_version": "3.5.4",
+  "tables": {
+    "bridge_job_skills": 327791,
+    "dim_companies": 23967,
+    "dim_date": 6209,
+    "dim_locations": 42,
+    "dim_skills": 196,
+    "fact_job_postings": 94963,
+    "skill_pairs": 3488,
+    "skill_pairs_yearly": 7184
+  }
+}

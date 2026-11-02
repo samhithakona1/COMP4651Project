@@ -1,0 +1,24 @@
+-- scale=50k arm=flat workload=c (warm cache, recorded by query_latency.py)
+-- Origin: original
+SELECT year, quarter, work_modality, count(*) AS postings,
+       percentile_cont(0.5) WITHIN GROUP (ORDER BY salary_avg_usd) AS median_salary
+FROM raw_flat_postings
+WHERE work_modality IN ('Remote', 'Hybrid') AND salary_avg_usd IS NOT NULL
+GROUP BY year, quarter, work_modality
+ORDER BY year, quarter, work_modality;
+
+GroupAggregate  (cost=2617.80..2645.38 rows=255 width=28) (actual time=3.183..3.459 rows=78 loops=1)
+  Group Key: year, quarter, work_modality
+  Buffers: shared hit=1920
+  ->  Sort  (cost=2617.80..2621.29 rows=1394 width=18) (actual time=3.180..3.224 rows=1971 loops=1)
+        Sort Key: year, quarter, work_modality
+        Sort Method: quicksort  Memory: 133kB
+        Buffers: shared hit=1920
+        ->  Seq Scan on raw_flat_postings  (cost=0.00..2545.00 rows=1394 width=18) (actual time=0.003..3.002 rows=1971 loops=1)
+              Filter: ((salary_avg_usd IS NOT NULL) AND (work_modality = ANY ('{Remote,Hybrid}'::text[])))
+              Rows Removed by Filter: 48029
+              Buffers: shared hit=1920
+Planning:
+  Buffers: shared hit=2
+Planning Time: 0.014 ms
+Execution Time: 3.466 ms

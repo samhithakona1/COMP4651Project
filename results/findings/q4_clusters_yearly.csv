@@ -1,0 +1,116 @@
+year,size,members,edges,mean_pairwise_lift
+2011,6,C++; Django; Git; Java; Python; jQuery,8,1.8692784556322373
+2011,5,AWS; MongoDB; Node.js; Ruby; Ruby on Rails,7,2.235655607120067
+2011,4,Linux; MySQL; PHP; Redis,3,2.42415121566065
+2011,3,Backbone.js; JavaScript; SQL,2,2.0183548060894507
+2012,10,Backbone.js; JavaScript; Memcached; MongoDB; Node.js; PostgreSQL; Redis; Ruby; Ruby on Rails; SQL,25,1.98737906455521
+2012,9,AWS; Django; Git; Linux; MySQL; Nginx; PHP; Python; jQuery,26,1.796618399757332
+2012,8,C; C++; Hadoop; Java; Machine Learning; Objective-C; Perl; Scala,10,3.2656610144842864
+2012,2,.NET; C#,1,9.467485435364509
+2013,16,Angular; Backbone.js; Bootstrap; CI/CD; Clojure; D3.js; Elasticsearch; Ember.js; Git; Go; Heroku; JavaScript; Node.js; Ruby; Ruby on Rails; jQuery,44,1.9998572217774835
+2013,10,AWS; Django; Linux; Memcached; MongoDB; MySQL; Nginx; PHP; PostgreSQL; Redis,34,2.539900079450479
+2013,8,Cassandra; Flask; Hadoop; Machine Learning; NLP; Python; RabbitMQ; Shell/Bash,9,3.303601541242164
+2013,5,C; C++; Java; Objective-C; Scala,5,4.579266755400343
+2013,4,.NET; C#; SQL; SQL Server,6,11.323851228556691
+2013,2,Chef; Puppet,1,26.513513513513512
+2014,17,Angular; Backbone.js; Bootstrap; D3.js; Django; Docker; Ember.js; Erlang; Flask; Go; JavaScript; Node.js; Perl; Python; R; React; jQuery,48,1.954594702023429
+2014,14,CI/CD; Elasticsearch; Git; Heroku; Jenkins; Memcached; MongoDB; MySQL; Nginx; PostgreSQL; RabbitMQ; Redis; Ruby; Ruby on Rails,50,2.359784490489184
+2014,9,.NET; C; C#; C++; Linux; PHP; SQL; SQL Server; Shell/Bash,15,4.297245937918152
+2014,9,Cassandra; Clojure; Hadoop; Java; Kafka; Machine Learning; NLP; Objective-C; Scala,14,3.3169681640953357
+2014,4,AWS; Ansible; Chef; Puppet,4,10.357586433084705
+2015,30,AWS; Angular; Ansible; Backbone.js; Bootstrap; CI/CD; D3.js; Django; Elasticsearch; Ember.js; Flask; Git; Heroku; JavaScript; Jenkins; Lua; Memcached; MongoDB; MySQL; Nginx; Node.js; PHP; PostgreSQL; RabbitMQ; React; Redis; Redshift; Ruby; Ruby on Rails; jQuery,183,2.0162484442879314
+2015,9,C; C++; Computer Vision; Erlang; Linux; Perl; Python; R; Shell/Bash,13,3.353323105701544
+2015,9,Apache Spark; Cassandra; Docker; Go; Hadoop; Java; Java Spring; Kafka; Scala,24,4.289826528736746
+2015,6,Clojure; Deep Learning; Machine Learning; NLP; NumPy; Pandas,6,16.87293260636958
+2015,4,.NET; C#; SQL; SQL Server,6,10.712179327745043
+2015,2,Chef; Puppet,1,35.416666666666664
+2015,2,Objective-C; Swift,1,26.0723716784948
+2016,28,AWS; Angular; Backbone.js; Bootstrap; CI/CD; D3.js; Docker; DynamoDB; Elixir; Ember.js; Go; GraphQL; Heroku; JavaScript; Jenkins; Kubernetes; Node.js; Objective-C; React; React Native; Redshift; Redux; Ruby; Ruby on Rails; Swift; Terraform; Vagrant; Webpack,101,2.254389079717799
+2016,14,Ansible; Django; Elasticsearch; Flask; Git; Laravel; Memcached; MongoDB; MySQL; Nginx; PHP; PostgreSQL; RabbitMQ; Redis,46,3.291405725045459
+2016,13,C; C++; Computer Vision; Deep Learning; Erlang; GCP; Linux; Machine Learning; NLP; Perl; Python; R; Shell/Bash,22,3.3141273926981225
+2016,9,Apache Spark; Cassandra; Clojure; Hadoop; Haskell; Java; Java Spring; Kafka; Scala,18,4.9213854327250965
+2016,7,.NET; Azure; C#; SQL; SQL Server; TypeScript; jQuery,12,7.980505653887743
+2016,3,NumPy; Pandas; scikit-learn,2,69.40460526315789
+2016,2,Chef; Puppet,1,66.81395348837209
+2017,30,AWS; Ansible; Backbone.js; Chef; D3.js; Django; DynamoDB; Elasticsearch; Ember.js; Express; Flask; GraphQL; Heroku; JavaScript; Memcached; MongoDB; MySQL; Nginx; Node.js; PostgreSQL; RabbitMQ; React; React Native; Redis; Redux; Ruby; Ruby on Rails; Serverless; Terraform; Webpack,168,2.3995063309790847
+2017,14,C; C++; CI/CD; CUDA; Erlang; Git; Go; Jenkins; Linux; OpenStack; Perl; Python; Rust; Shell/Bash,33,2.9558055075275864
+2017,8,Apache Spark; Cassandra; Hadoop; Haskell; Hive; Kafka; Redshift; Scala,14,7.914325492558729
+2017,8,.NET; Angular; Azure; C#; SQL; SQL Server; TypeScript; jQuery,18,6.701800775581872
+2017,7,Clojure; Computer Vision; Deep Learning; Machine Learning; NLP; R; TensorFlow,9,4.82627224252859
+2017,5,Java; Java Spring; Kotlin; Objective-C; Swift,5,7.326541825985034
+2017,5,Docker; GCP; Kubernetes; Prometheus; Puppet,6,5.923662982954444
+2017,4,Laravel; PHP; Symfony; Vue.js,3,10.075650464693249
+2017,3,NumPy; Pandas; scikit-learn,3,44.000585411544314
+2017,2,Elixir; Phoenix,1,36.07770007770008
+2018,24,AWS; Backbone.js; Bootstrap; CircleCI; D3.js; DynamoDB; Ember.js; Express; GraphQL; Heroku; JavaScript; Kinesis; Node.js; PostgreSQL; React; React Native; Redux; Ruby; Ruby on Rails; Rust; Serverless; TypeScript; Webpack; jQuery,90,2.006240301063888
+2018,17,Ansible; CI/CD; Django; Docker; Elasticsearch; Git; Jenkins; Kubernetes; Linux; MongoDB; MySQL; Nginx; Prometheus; Puppet; RabbitMQ; Redis; Terraform,81,3.091683713081153
+2018,14,BigQuery; Clojure; Computer Vision; Deep Learning; Keras; Machine Learning; NLP; NumPy; Pandas; Perl; Python; R; TensorFlow; scikit-learn,27,9.468381305707375
+2018,11,C; C++; Erlang; Go; Java; Java Spring; Kotlin; Objective-C; Shell/Bash; Swift; gRPC,19,4.8120987011315846
+2018,9,Airflow; Apache Spark; Cassandra; Hadoop; Haskell; Hive; Kafka; Redshift; Scala,15,11.38648460050118
+2018,8,.NET; Angular; Azure; C#; Flask; GCP; SQL; SQL Server,17,6.743350146910428
+2018,4,Laravel; PHP; Symfony; Vue.js,4,10.166806454005291
+2018,2,Elixir; Phoenix,1,31.485162505887896
+2019,27,D3.js; Django; Elasticsearch; Ember.js; Express; Flask; GraphQL; Haskell; Heroku; JavaScript; Node.js; PostgreSQL; PyTorch; Python; R; RabbitMQ; React; React Native; Redis; Redshift; Redux; Ruby; Ruby on Rails; TypeScript; Vue.js; Webpack; jQuery,121,2.0906167403333056
+2019,23,AWS; Ansible; C; C++; CI/CD; CircleCI; Docker; DynamoDB; Git; Go; Grafana; Jenkins; Kinesis; Linux; MongoDB; MySQL; Nginx; Prometheus; Rust; Serverless; Shell/Bash; Terraform; gRPC,78,3.000210797276077
+2019,9,Airflow; Apache Spark; Cassandra; Clojure; Erlang; Hadoop; Kafka; Kubernetes; Scala,15,6.728684591829645
+2019,6,Computer Vision; Deep Learning; Keras; Machine Learning; NLP; TensorFlow,7,10.703759437945848
+2019,6,.NET; Angular; Azure; C#; SQL; SQL Server,13,7.509687596804122
+2019,5,Java; Java Spring; Kotlin; Objective-C; Swift,6,7.976575950091353
+2019,4,BigQuery; Elixir; GCP; Phoenix,3,11.841762933154483
+2019,3,NumPy; Pandas; scikit-learn,2,54.68233293816684
+2019,3,Laravel; PHP; Symfony,2,15.090592805269381
+2020,21,AWS; CircleCI; Clojure; D3.js; DynamoDB; Express; GraphQL; Haskell; Heroku; JavaScript; Next.js; Node.js; Objective-C; React; React Native; Ruby; Ruby on Rails; Serverless; TypeScript; Webpack; gRPC,61,2.3303709775952948
+2020,18,Airflow; C; C++; Cassandra; Computer Vision; Deep Learning; Flask; GCP; Go; Kubernetes; Machine Learning; NLP; PyTorch; Python; R; Rust; TensorFlow; scikit-learn,41,3.1629248593836197
+2020,13,Ansible; Django; Docker; Elasticsearch; Kafka; MongoDB; MySQL; PostgreSQL; Prometheus; RabbitMQ; Redis; Redux; Terraform,55,3.7045067754187415
+2020,7,.NET; Angular; Azure; C#; Laravel; PHP; Vue.js,10,7.3240586821311116
+2020,7,Apache Spark; Java; Java Spring; Kotlin; Scala; Shell/Bash; Swift,9,5.294369445183956
+2020,5,CI/CD; Git; Jenkins; Kinesis; Linux,6,8.973136269930606
+2020,2,NumPy; Pandas,1,81.66757000903343
+2020,2,Elixir; Phoenix,1,25.12901098901099
+2020,2,SQL; SQL Server,1,18.380184331797235
+2021,29,AWS; BigQuery; CircleCI; CloudFormation; Django; DynamoDB; Express; Flutter; GraphQL; Heroku; JavaScript; Kinesis; MongoDB; Next.js; Node.js; PostgreSQL; React; React Native; Redis; Redshift; Redux; Ruby; Ruby on Rails; Serverless; Snowflake; Tailwind; Three.js; TypeScript; Webpack,126,2.175940448874988
+2021,16,Airflow; Computer Vision; Deep Learning; FastAPI; Firebase; Flask; GCP; MLOps; Machine Learning; NLP; PyTorch; Python; R; Shell/Bash; TensorFlow; dbt,28,4.902968378379965
+2021,15,Ansible; C; C++; CI/CD; Docker; Elasticsearch; Git; GitHub Actions; Grafana; Jenkins; Linux; Prometheus; RabbitMQ; Rust; Terraform,39,4.222629536643607
+2021,9,Apache Spark; Clojure; Go; Java; Java Spring; Kafka; Kubernetes; Scala; gRPC,19,3.7701263300650028
+2021,6,Elixir; Haskell; Kotlin; Objective-C; Phoenix; Swift,6,10.339907119772349
+2021,6,.NET; Angular; Azure; C#; SQL; SQL Server,12,8.816540372740121
+2021,5,Laravel; MySQL; Nginx; PHP; Vue.js,5,8.504212795979157
+2021,3,NumPy; Pandas; scikit-learn,2,87.29047895646437
+2022,27,AWS; Ansible; CI/CD; Clojure; Django; Docker; DynamoDB; Express; Flask; Flutter; Git; GraphQL; JavaScript; Jenkins; MongoDB; Next.js; Node.js; PostgreSQL; React; React Native; Redux; Serverless; Snowflake; Tailwind; Terraform; TypeScript; Vue.js,126,1.974305645743916
+2022,12,Airflow; ClickHouse; Computer Vision; Deep Learning; FastAPI; MLOps; Machine Learning; NLP; PyTorch; Python; TensorFlow; dbt,19,3.6459609802410053
+2022,8,Elasticsearch; Heroku; Kafka; MySQL; Nginx; Redis; Ruby; Ruby on Rails,14,4.601517950507173
+2022,8,BigQuery; GCP; Go; Grafana; Helm; Kubernetes; RabbitMQ; gRPC,10,4.238824379096628
+2022,6,.NET; Angular; Azure; C#; SQL; SQL Server,7,7.985433404822348
+2022,6,C; C++; Haskell; Linux; Rust; WebAssembly,8,4.808259418913646
+2022,4,Apache Spark; Java; Java Spring; Scala,4,8.209978585714735
+2022,3,Kotlin; Objective-C; Swift,2,18.109257759784075
+2022,2,Elixir; Phoenix,1,28.226399739583332
+2022,2,Laravel; PHP,1,20.359079283887468
+2023,16,AWS; Django; GraphQL; JavaScript; MongoDB; MySQL; Next.js; Node.js; PostgreSQL; React; React Native; Redux; SQL; Tailwind; TypeScript; Vue.js,59,2.0630651983302153
+2023,10,Computer Vision; Deep Learning; FastAPI; Flask; LLM; Machine Learning; NLP; PyTorch; Python; TensorFlow,13,2.673826002801988
+2023,8,Ansible; Docker; Kafka; Kubernetes; Linux; Prometheus; Redis; Terraform,14,4.463588322705069
+2023,7,C; C++; Go; Java; Kotlin; Rust; Swift,10,5.197306924171134
+2023,4,CI/CD; Git; GitHub Actions; Grafana,3,6.222901753091733
+2023,2,.NET; C#,1,17.863366336633664
+2023,2,Ruby; Ruby on Rails,1,11.034862385321102
+2023,2,Azure; GCP,1,7.997340425531915
+2024,12,GraphQL; MongoDB; PostgreSQL; React; React Native; Redis; Redux; Ruby; Ruby on Rails; Tailwind; TypeScript; Vercel,24,2.670199622580512
+2024,11,Computer Vision; Deep Learning; Django; Elasticsearch; FastAPI; Generative AI; LLM; Machine Learning; PyTorch; Python; SQL,12,2.287807363209455
+2024,8,Docker; JavaScript; Kafka; Kubernetes; MySQL; Next.js; Node.js; Vue.js,13,2.854843194170746
+2024,6,AWS; Ansible; Azure; GCP; Serverless; Terraform,7,4.620353250607129
+2024,5,C; C++; Go; Java; Rust,6,3.964735375499094
+2024,4,CI/CD; Git; GitHub Actions; Linux,3,4.806668510063249
+2024,2,.NET; C#,1,21.51937984496124
+2025,15,AWS; Computer Vision; Django; Docker; Elasticsearch; FastAPI; Go; Kafka; MySQL; PostgreSQL; Python; Redis; SQL; Tailwind; Terraform,35,2.10706899418769
+2025,13,CI/CD; Generative AI; GraphQL; JavaScript; Kotlin; MongoDB; Next.js; Node.js; React; React Native; Serverless; TypeScript; Vue.js,28,2.1066102151115955
+2025,7,Azure; BigQuery; GCP; Grafana; Java; Kubernetes; Prometheus,7,4.775942771844462
+2025,5,Anthropic Claude; LLM; Machine Learning; OpenAI API; PyTorch,5,5.224545372759578
+2025,5,C++; Git; GitHub Actions; Linux; Rust,5,3.3801334929127855
+2025,2,.NET; C#,1,29.558474046278924
+2025,2,Ruby; Ruby on Rails,1,15.845210727969349
+2026,12,Elasticsearch; FastAPI; GraphQL; Java; JavaScript; Next.js; Node.js; PostgreSQL; React; React Native; Tailwind; TypeScript,33,2.2728038981488496
+2026,10,Anthropic Claude; Computer Vision; Django; LLM; LangChain; Machine Learning; OpenAI API; PyTorch; Python; RAG,16,2.571062929962201
+2026,9,AWS; Azure; CI/CD; Docker; GCP; Go; Kubernetes; Redis; Terraform,22,2.8209845575176797
+2026,4,C; C++; Linux; Rust,4,6.176729360383206
+2026,3,Git; GitHub Actions; SQL,2,4.1168543795529695
+2026,2,Ruby; Ruby on Rails,1,15.635123614663257

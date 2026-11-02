@@ -1,0 +1,16 @@
+# Versions marked (constraints) are fixed by the Airflow 2.10.5 / Python 3.11 constraints file.
+apache-airflow==2.10.5
+pyspark==3.5.4            # (constraints)
+pandas==2.1.4             # (constraints)
+numpy==1.26.4             # (constraints)
+pyarrow==16.1.0           # (constraints)
+aiohttp==3.11.11          # (constraints)
+psycopg2-binary==2.9.10   # (constraints)
+networkx==3.4.2           # (constraints)
+psutil==6.1.1             # (constraints)
+pytest==8.3.4             # (constraints)
+requests==2.32.3          # (constraints)
+statsmodels==0.14.4
+scipy==1.14.1
+patsy==1.0.1
+matplotlib==3.9.4

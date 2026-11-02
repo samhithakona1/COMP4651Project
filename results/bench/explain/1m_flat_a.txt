@@ -1,0 +1,42 @@
+-- scale=1m arm=flat workload=a (warm cache, recorded by query_latency.py)
+-- Origin: original
+SELECT sk AS skill_name, count(*) AS postings,
+       percentile_cont(0.5) WITHIN GROUP (ORDER BY salary_avg_usd) AS median_salary
+FROM raw_flat_postings, unnest(skills) AS sk
+WHERE 'Kubernetes' = ANY(skills) AND sk <> 'Kubernetes'
+  AND year = 2025 AND is_remote AND salary_avg_usd IS NOT NULL
+GROUP BY sk
+HAVING count(*) >= 100
+ORDER BY median_salary DESC
+LIMIT 5;
+
+Limit  (cost=49115.99..49115.99 rows=3 width=48) (actual time=52.360..52.393 rows=5 loops=1)
+  Buffers: shared hit=5067 read=32571
+  ->  Sort  (cost=49115.99..49115.99 rows=3 width=48) (actual time=52.360..52.392 rows=5 loops=1)
+        Sort Key: (percentile_cont('0.5'::double precision) WITHIN GROUP (ORDER BY ((raw_flat_postings.salary_avg_usd)::double precision))) DESC
+        Sort Method: top-N heapsort  Memory: 25kB
+        Buffers: shared hit=5067 read=32571
+        ->  GroupAggregate  (cost=49107.28..49115.96 rows=3 width=48) (actual time=51.367..52.386 rows=20 loops=1)
+              Group Key: sk.sk
+              Filter: (count(*) >= 100)
+              Rows Removed by Filter: 49
+              Buffers: shared hit=5067 read=32571
+              ->  Sort  (cost=49107.28..49108.99 rows=684 width=38) (actual time=51.339..51.579 rows=5915 loops=1)
+                    Sort Key: sk.sk
+                    Sort Method: quicksort  Memory: 433kB
+                    Buffers: shared hit=5067 read=32571
+                    ->  Nested Loop  (cost=1000.00..49075.07 rows=684 width=38) (actual time=0.314..50.552 rows=5915 loops=1)
+                          Buffers: shared hit=5067 read=32571
+                          ->  Gather  (cost=1000.00..49058.72 rows=76 width=68) (actual time=0.311..49.542 rows=744 loops=1)
+                                Workers Planned: 2
+                                Workers Launched: 2
+                                Buffers: shared hit=5067 read=32571
+                                ->  Parallel Seq Scan on raw_flat_postings  (cost=0.00..48051.12 rows=32 width=68) (actual time=0.472..49.173 rows=248 loops=3)
+                                      Filter: (is_remote AND (salary_avg_usd IS NOT NULL) AND (year = 2025) AND ('Kubernetes'::text = ANY ((skills)::text[])))
+                                      Rows Removed by Filter: 333085
+                                      Buffers: shared hit=5067 read=32571
+                          ->  Function Scan on unnest sk  (cost=0.00..0.13 rows=9 width=32) (actual time=0.001..0.001 rows=8 loops=744)
+                                Filter: ((sk)::text <> 'Kubernetes'::text)
+                                Rows Removed by Filter: 1
+Planning Time: 0.047 ms
+Execution Time: 52.408 ms

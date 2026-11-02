@@ -1,0 +1,41 @@
+started_at,engine,scale,is_synthetic,run,kind,protocol,status,wall_s,peak_rss_mb,returncode,spark_master,spark_driver_memory,host_cpus,machine,kernel,vm_mem_total,container_mem_limit,python,pandas,pyarrow,pyspark,git_commit,host_label
+2026-11-02T10:34:04+00:00,pandas,10k,True,0,warmup,1 warm-up + 5 measured,ok,16.668,238.0,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:34:04+00:00,pandas,10k,True,1,measured,1 warm-up + 5 measured,ok,16.652,238.0,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:34:04+00:00,pandas,10k,True,2,measured,1 warm-up + 5 measured,ok,16.938,235.6,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:34:04+00:00,pandas,10k,True,3,measured,1 warm-up + 5 measured,ok,16.86,238.1,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:34:04+00:00,pandas,10k,True,4,measured,1 warm-up + 5 measured,ok,16.997,238.1,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:34:04+00:00,pandas,10k,True,5,measured,1 warm-up + 5 measured,ok,16.665,238.0,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:35:46+00:00,spark,10k,True,0,warmup,1 warm-up + 5 measured,ok,19.856,1849.9,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:35:46+00:00,spark,10k,True,1,measured,1 warm-up + 5 measured,ok,19.48,1794.0,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:35:46+00:00,spark,10k,True,2,measured,1 warm-up + 5 measured,ok,20.46,2205.3,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:35:46+00:00,spark,10k,True,3,measured,1 warm-up + 5 measured,ok,20.364,1945.8,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:35:46+00:00,spark,10k,True,4,measured,1 warm-up + 5 measured,ok,20.328,1985.2,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:35:46+00:00,spark,10k,True,5,measured,1 warm-up + 5 measured,ok,30.218,1902.9,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:37:59+00:00,pandas,50k,True,0,warmup,1 warm-up + 5 measured,ok,96.5,740.1,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:37:59+00:00,pandas,50k,True,1,measured,1 warm-up + 5 measured,ok,90.709,785.3,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:37:59+00:00,pandas,50k,True,2,measured,1 warm-up + 5 measured,ok,83.024,738.9,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:37:59+00:00,pandas,50k,True,3,measured,1 warm-up + 5 measured,ok,80.151,738.9,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:37:59+00:00,pandas,50k,True,4,measured,1 warm-up + 5 measured,ok,80.021,745.6,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:37:59+00:00,pandas,50k,True,5,measured,1 warm-up + 5 measured,ok,80.904,738.9,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:46:32+00:00,spark,50k,True,0,warmup,1 warm-up + 5 measured,ok,59.446,2200.2,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:46:32+00:00,spark,50k,True,1,measured,1 warm-up + 5 measured,ok,61.048,2232.0,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:46:32+00:00,spark,50k,True,2,measured,1 warm-up + 5 measured,ok,58.915,2416.6,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:46:32+00:00,spark,50k,True,3,measured,1 warm-up + 5 measured,ok,58.692,2725.3,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:46:32+00:00,spark,50k,True,4,measured,1 warm-up + 5 measured,ok,58.127,2295.5,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:46:32+00:00,spark,50k,True,5,measured,1 warm-up + 5 measured,ok,56.907,2354.7,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:52:27+00:00,pandas,real,False,0,warmup,1 warm-up + 5 measured,ok,152.731,1307.1,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:52:27+00:00,pandas,real,False,1,measured,1 warm-up + 5 measured,ok,154.681,1361.7,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:52:27+00:00,pandas,real,False,2,measured,1 warm-up + 5 measured,ok,154.064,1364.5,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:52:27+00:00,pandas,real,False,3,measured,1 warm-up + 5 measured,ok,152.682,1362.0,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:52:27+00:00,pandas,real,False,4,measured,1 warm-up + 5 measured,ok,152.399,1330.5,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T10:52:27+00:00,pandas,real,False,5,measured,1 warm-up + 5 measured,ok,151.607,1361.9,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T11:07:47+00:00,spark,real,False,0,warmup,1 warm-up + 5 measured,ok,106.3,2663.4,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T11:07:47+00:00,spark,real,False,1,measured,1 warm-up + 5 measured,ok,102.073,2563.3,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T11:07:47+00:00,spark,real,False,2,measured,1 warm-up + 5 measured,ok,100.658,2674.6,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T11:07:47+00:00,spark,real,False,3,measured,1 warm-up + 5 measured,ok,102.291,2659.0,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T11:07:47+00:00,spark,real,False,4,measured,1 warm-up + 5 measured,ok,100.54,2709.3,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T11:07:47+00:00,spark,real,False,5,measured,1 warm-up + 5 measured,ok,168.506,2987.3,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T11:19:09+00:00,pandas,200k,True,0,measured,0 warm-up + 1 measured (reduced: long runtime),ok,387.909,2688.9,0,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T11:25:38+00:00,spark,200k,True,0,measured,0 warm-up + 1 measured (reduced: long runtime),ok,311.464,3035.1,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T11:30:52+00:00,pandas,1m,True,0,measured,0 warm-up + 1 measured (reduced: long runtime),oom,15.645,6076.9,-9,,,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64
+2026-11-02T11:31:09+00:00,spark,1m,True,0,measured,0 warm-up + 1 measured (reduced: long runtime),ok,1036.228,4661.8,0,local[*],3g,10,aarch64,7.0.14-linuxkit,7.75GiB,6.00GiB,3.11.11,2.1.4,16.1.0,3.5.4,uncommitted,Darwin arm64

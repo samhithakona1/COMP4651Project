@@ -1,0 +1,46 @@
+-- scale=10k arm=star workload=b (warm cache, recorded by query_latency.py)
+-- Origin: original
+-- (b) Yearly median posted pay for one skill (Rust).
+SELECT d.year, count(*) AS postings,
+       percentile_cont(0.5) WITHIN GROUP (ORDER BY f.salary_avg_usd) AS median_salary
+FROM dim_skills s
+JOIN bridge_job_skills bj ON bj.skill_id = s.skill_id
+JOIN fact_job_postings f  ON f.posting_id = bj.posting_id
+JOIN dim_date d           ON d.date_id = f.date_id
+WHERE s.skill_name = 'Rust' AND f.salary_avg_usd IS NOT NULL
+GROUP BY d.year
+ORDER BY d.year;
+
+GroupAggregate  (cost=86.31..86.61 rows=12 width=18) (actual time=0.184..0.189 rows=8 loops=1)
+  Group Key: d.year
+  Buffers: shared hit=915
+  ->  Sort  (cost=86.31..86.34 rows=12 width=8) (actual time=0.182..0.183 rows=19 loops=1)
+        Sort Key: d.year
+        Sort Method: quicksort  Memory: 25kB
+        Buffers: shared hit=915
+        ->  Nested Loop  (cost=0.86..86.10 rows=12 width=8) (actual time=0.016..0.180 rows=19 loops=1)
+              Buffers: shared hit=915
+              ->  Nested Loop  (cost=0.57..73.86 rows=12 width=10) (actual time=0.014..0.169 rows=19 loops=1)
+                    Buffers: shared hit=858
+                    ->  Nested Loop  (cost=0.29..13.80 rows=177 width=8) (actual time=0.005..0.031 rows=284 loops=1)
+                          Buffers: shared hit=6
+                          ->  Seq Scan on dim_skills s  (cost=0.00..4.45 rows=1 width=8) (actual time=0.002..0.006 rows=1 loops=1)
+                                Filter: ((skill_name)::text = 'Rust'::text)
+                                Rows Removed by Filter: 195
+                                Buffers: shared hit=2
+                          ->  Index Only Scan using ix_bridge_skill_posting on bridge_job_skills bj  (cost=0.29..7.51 rows=184 width=16) (actual time=0.003..0.012 rows=284 loops=1)
+                                Index Cond: (skill_id = s.skill_id)
+                                Heap Fetches: 0
+                                Buffers: shared hit=4
+                    ->  Index Scan using fact_job_postings_pkey on fact_job_postings f  (cost=0.29..0.34 rows=1 width=18) (actual time=0.000..0.000 rows=0 loops=284)
+                          Index Cond: (posting_id = bj.posting_id)
+                          Filter: (salary_avg_usd IS NOT NULL)
+                          Rows Removed by Filter: 1
+                          Buffers: shared hit=852
+              ->  Index Scan using dim_date_pkey on dim_date d  (cost=0.28..1.02 rows=1 width=6) (actual time=0.000..0.000 rows=1 loops=19)
+                    Index Cond: (date_id = f.date_id)
+                    Buffers: shared hit=57
+Planning:
+  Buffers: shared hit=28
+Planning Time: 0.113 ms
+Execution Time: 0.197 ms

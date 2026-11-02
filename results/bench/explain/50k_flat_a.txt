@@ -1,0 +1,38 @@
+-- scale=50k arm=flat workload=a (warm cache, recorded by query_latency.py)
+-- Origin: original
+SELECT sk AS skill_name, count(*) AS postings,
+       percentile_cont(0.5) WITHIN GROUP (ORDER BY salary_avg_usd) AS median_salary
+FROM raw_flat_postings, unnest(skills) AS sk
+WHERE 'Kubernetes' = ANY(skills) AND sk <> 'Kubernetes'
+  AND year = 2025 AND is_remote AND salary_avg_usd IS NOT NULL
+GROUP BY sk
+HAVING count(*) >= 100
+ORDER BY median_salary DESC
+LIMIT 5;
+
+Limit  (cost=3172.40..3172.41 rows=3 width=48) (actual time=3.787..3.787 rows=0 loops=1)
+  Buffers: shared hit=1920
+  ->  Sort  (cost=3172.40..3172.41 rows=3 width=48) (actual time=3.786..3.787 rows=0 loops=1)
+        Sort Key: (percentile_cont('0.5'::double precision) WITHIN GROUP (ORDER BY ((raw_flat_postings.salary_avg_usd)::double precision))) DESC
+        Sort Method: quicksort  Memory: 25kB
+        Buffers: shared hit=1920
+        ->  GroupAggregate  (cost=3171.79..3172.38 rows=3 width=48) (actual time=3.786..3.786 rows=0 loops=1)
+              Group Key: sk.sk
+              Filter: (count(*) >= 100)
+              Rows Removed by Filter: 60
+              Buffers: shared hit=1920
+              ->  Sort  (cost=3171.79..3171.88 rows=36 width=38) (actual time=3.727..3.735 rows=322 loops=1)
+                    Sort Key: sk.sk
+                    Sort Method: quicksort  Memory: 38kB
+                    Buffers: shared hit=1920
+                    ->  Nested Loop  (cost=0.00..3170.86 rows=36 width=38) (actual time=0.149..3.682 rows=322 loops=1)
+                          Buffers: shared hit=1920
+                          ->  Seq Scan on raw_flat_postings  (cost=0.00..3170.00 rows=4 width=68) (actual time=0.148..3.627 rows=41 loops=1)
+                                Filter: (is_remote AND (salary_avg_usd IS NOT NULL) AND (year = 2025) AND ('Kubernetes'::text = ANY ((skills)::text[])))
+                                Rows Removed by Filter: 49959
+                                Buffers: shared hit=1920
+                          ->  Function Scan on unnest sk  (cost=0.00..0.13 rows=9 width=32) (actual time=0.000..0.001 rows=8 loops=41)
+                                Filter: ((sk)::text <> 'Kubernetes'::text)
+                                Rows Removed by Filter: 1
+Planning Time: 0.020 ms
+Execution Time: 3.795 ms

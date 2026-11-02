@@ -1,0 +1,11 @@
+engine,scale,rows,is_synthetic,measured_runs_ok,status,protocol,median_wall_s,min_wall_s,max_wall_s,median_peak_rss_mb,max_peak_rss_mb,container_mem_limit,speedup_pandas_over_spark
+pandas,10k,10000,True,5,ok,1 warm-up + 5 measured,16.86,16.652,16.997,238.0,238.1,6.00GiB,0.8279316440777843
+spark,10k,10000,True,5,ok,1 warm-up + 5 measured,20.364,19.48,30.218,1945.8,2205.3,6.00GiB,0.8279316440777843
+pandas,50k,50000,True,5,ok,1 warm-up + 5 measured,80.904,80.021,90.709,738.9,785.3,6.00GiB,1.3784502146800244
+spark,50k,50000,True,5,ok,1 warm-up + 5 measured,58.692,56.907,61.048,2354.7,2725.3,6.00GiB,1.3784502146800244
+pandas,real,94951,False,5,ok,1 warm-up + 5 measured,152.682,151.607,154.681,1361.9,1364.5,6.00GiB,1.4958118209516718
+spark,real,94951,False,5,ok,1 warm-up + 5 measured,102.073,100.54,168.506,2674.6,2987.3,6.00GiB,1.4958118209516718
+pandas,200k,200000,True,1,ok,0 warm-up + 1 measured (reduced: long runtime),387.909,387.909,387.909,2688.9,2688.9,6.00GiB,1.245437674980094
+spark,200k,200000,True,1,ok,0 warm-up + 1 measured (reduced: long runtime),311.464,311.464,311.464,3035.1,3035.1,6.00GiB,1.245437674980094
+pandas,1m,1000000,True,0,oom,0 warm-up + 1 measured (reduced: long runtime),,,,,6076.9,6.00GiB,
+spark,1m,1000000,True,1,ok,0 warm-up + 1 measured (reduced: long runtime),1036.228,1036.228,1036.228,4661.8,4661.8,6.00GiB,

@@ -1,0 +1,75 @@
+-- scale=50k arm=star workload=a (warm cache, recorded by query_latency.py)
+-- Origin: original
+-- (a) Top 5 highest-paying skills co-occurring with Kubernetes in remote 2025 postings (>= 100 salaried postings).
+SELECT s2.skill_name, count(*) AS postings,
+       percentile_cont(0.5) WITHIN GROUP (ORDER BY f.salary_avg_usd) AS median_salary
+FROM dim_skills k
+JOIN bridge_job_skills bk ON bk.skill_id = k.skill_id
+JOIN fact_job_postings f  ON f.posting_id = bk.posting_id
+JOIN dim_date d           ON d.date_id = f.date_id
+JOIN bridge_job_skills b2 ON b2.posting_id = f.posting_id
+JOIN dim_skills s2        ON s2.skill_id = b2.skill_id
+WHERE k.skill_name = 'Kubernetes' AND s2.skill_name <> 'Kubernetes'
+  AND d.year = 2025 AND f.is_remote AND f.salary_avg_usd IS NOT NULL
+GROUP BY s2.skill_name
+HAVING count(*) >= 100
+ORDER BY median_salary DESC
+LIMIT 5;
+
+Limit  (cost=369.95..369.95 rows=1 width=24) (actual time=2.323..2.324 rows=0 loops=1)
+  Buffers: shared hit=11856
+  ->  Sort  (cost=369.95..369.95 rows=1 width=24) (actual time=2.323..2.323 rows=0 loops=1)
+        Sort Key: (percentile_cont('0.5'::double precision) WITHIN GROUP (ORDER BY ((f.salary_avg_usd)::double precision))) DESC
+        Sort Method: quicksort  Memory: 25kB
+        Buffers: shared hit=11856
+        ->  GroupAggregate  (cost=369.85..369.94 rows=1 width=24) (actual time=2.321..2.322 rows=0 loops=1)
+              Group Key: s2.skill_name
+              Filter: (count(*) >= 100)
+              Rows Removed by Filter: 60
+              Buffers: shared hit=11856
+              ->  Sort  (cost=369.85..369.86 rows=3 width=14) (actual time=2.264..2.271 rows=322 loops=1)
+                    Sort Key: s2.skill_name
+                    Sort Method: quicksort  Memory: 38kB
+                    Buffers: shared hit=11856
+                    ->  Nested Loop  (cost=1.56..369.83 rows=3 width=14) (actual time=0.100..2.211 rows=322 loops=1)
+                          Buffers: shared hit=11856
+                          ->  Nested Loop  (cost=1.41..369.33 rows=3 width=14) (actual time=0.097..2.091 rows=363 loops=1)
+                                Join Filter: (f.posting_id = b2.posting_id)
+                                Buffers: shared hit=11130
+                                ->  Nested Loop  (cost=0.99..368.71 rows=1 width=22) (actual time=0.094..2.027 rows=41 loops=1)
+                                      Buffers: shared hit=11006
+                                      ->  Nested Loop  (cost=0.71..353.07 rows=24 width=26) (actual time=0.021..1.931 rows=189 loops=1)
+                                            Buffers: shared hit=10439
+                                            ->  Nested Loop  (cost=0.42..50.89 rows=878 width=8) (actual time=0.009..0.286 rows=3473 loops=1)
+                                                  Buffers: shared hit=20
+                                                  ->  Seq Scan on dim_skills k  (cost=0.00..4.45 rows=1 width=8) (actual time=0.003..0.006 rows=1 loops=1)
+                                                        Filter: ((skill_name)::text = 'Kubernetes'::text)
+                                                        Rows Removed by Filter: 195
+                                                        Buffers: shared hit=2
+                                                  ->  Index Only Scan using ix_bridge_skill_posting on bridge_job_skills bk  (cost=0.42..36.98 rows=946 width=16) (actual time=0.006..0.140 rows=3473 loops=1)
+                                                        Index Cond: (skill_id = k.skill_id)
+                                                        Heap Fetches: 0
+                                                        Buffers: shared hit=18
+                                            ->  Index Scan using fact_job_postings_pkey on fact_job_postings f  (cost=0.29..0.34 rows=1 width=18) (actual time=0.000..0.000 rows=0 loops=3473)
+                                                  Index Cond: (posting_id = bk.posting_id)
+                                                  Filter: (is_remote AND (salary_avg_usd IS NOT NULL))
+                                                  Rows Removed by Filter: 1
+                                                  Buffers: shared hit=10419
+                                      ->  Index Scan using dim_date_pkey on dim_date d  (cost=0.28..0.65 rows=1 width=4) (actual time=0.000..0.000 rows=0 loops=189)
+                                            Index Cond: (date_id = f.date_id)
+                                            Filter: (year = 2025)
+                                            Rows Removed by Filter: 1
+                                            Buffers: shared hit=567
+                                ->  Index Only Scan using bridge_job_skills_pkey on bridge_job_skills b2  (cost=0.42..0.55 rows=6 width=16) (actual time=0.001..0.001 rows=9 loops=41)
+                                      Index Cond: (posting_id = bk.posting_id)
+                                      Heap Fetches: 0
+                                      Buffers: shared hit=124
+                          ->  Index Scan using dim_skills_pkey on dim_skills s2  (cost=0.14..0.17 rows=1 width=16) (actual time=0.000..0.000 rows=1 loops=363)
+                                Index Cond: (skill_id = b2.skill_id)
+                                Filter: ((skill_name)::text <> 'Kubernetes'::text)
+                                Rows Removed by Filter: 0
+                                Buffers: shared hit=726
+Planning:
+  Buffers: shared hit=74
+Planning Time: 1.008 ms
+Execution Time: 2.346 ms

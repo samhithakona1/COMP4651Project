@@ -1,0 +1,14 @@
+size,members,edges,mean_pairwise_lift
+36,Angular; Ansible; Backbone.js; Bootstrap; Chef; ClickHouse; Cloudflare; D3.js; Django; Elasticsearch; Ember.js; Flask; Heroku; JavaScript; Laravel; Linux; Lua; Memcached; MongoDB; MySQL; Neo4j; Nginx; PHP; Perl; PostgreSQL; Puppet; RabbitMQ; Rails Hotwire; Redis; Ruby; Ruby on Rails; Shell/Bash; Symfony; Vagrant; Webpack; jQuery,341,3.521728248902926
+36,AWS; Argo CD; CircleCI; Datadog; Docker; DuckDB; DynamoDB; Electron; Elixir; Envoy; Express; Firebase; Fivetran; Go; GraphQL; Helm; Istio; Kinesis; Kotlin; Kubernetes; Node.js; Nuxt; Objective-C; Phoenix; React; React Native; Redux; Serverless; Solidity; Svelte; Swift; TimescaleDB; TypeScript; Vue.js; WebRTC; eBPF,222,3.1682062240513638
+19,CUDA; Computer Vision; Deep Learning; Hugging Face; Keras; MLOps; Machine Learning; NLP; NumPy; Pandas; Parquet; PyTorch; Python; Qt; Reinforcement Learning; SageMaker; TensorFlow; XGBoost; scikit-learn,76,13.168379535898397
+14,.NET; Azure; C; C#; C++; Fortran; Julia; MATLAB; Oracle DB; R; SQL; SQL Server; SQLite; Tableau,31,9.937651206710065
+13,Apache Spark; Cassandra; Druid; Erlang; Flink; Groovy; Hadoop; Hive; Java; Java Spring; Kafka; Presto/Trino; Scala,42,11.26860225404456
+11,Anthropic Claude; FastAPI; Generative AI; LLM; LangChain; Next.js; OpenAI API; RAG; Supabase; Tailwind; Vercel,18,20.54392654298178
+9,Airflow; Apache Beam; BigQuery; Databricks; GCP; Looker; Redshift; Snowflake; dbt,16,26.83460209644796
+9,CI/CD; Elm; Git; GitHub Actions; Grafana; Jenkins; OpenStack; Prometheus; gRPC,27,13.826104096780908
+7,Clojure; F#; Haskell; OCaml; Rust; Scheme/Racket; WebAssembly,13,22.29947263608341
+4,Consul; Nomad; Terraform; Vault,6,151.14282960178554
+3,Three.js; Unity; Unreal Engine,2,52.99680492788197
+2,Dart; Flutter,1,116.83198380566802
+2,CloudFormation; Pulumi,1,89.18006129213835

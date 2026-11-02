@@ -1,0 +1,24 @@
+{
+  "loaded_at": "2026-11-02T11:49:28+00:00",
+  "processed_dir": "/data/synthetic/n=10k/processed",
+  "rows_staged": {
+    "bridge_job_skills": 34678,
+    "dim_companies": 23967,
+    "dim_date": 6209,
+    "dim_locations": 42,
+    "dim_skills": 196,
+    "fact_job_postings": 10000,
+    "skill_pairs": 0
+  },
+  "schema": "bench_10k",
+  "seconds": 0.86,
+  "table_counts": {
+    "bridge_job_skills": 34678,
+    "dim_companies": 23967,
+    "dim_date": 6209,
+    "dim_locations": 42,
+    "dim_skills": 196,
+    "fact_job_postings": 10000,
+    "skill_pairs": 0
+  }
+}

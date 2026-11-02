@@ -1,0 +1,13 @@
+{
+  "fn": 0,
+  "fp": 0,
+  "labels_not_in_taxonomy": {},
+  "macro_precision": null,
+  "macro_recall": null,
+  "micro_precision": null,
+  "micro_recall": null,
+  "n_labelled": 0,
+  "n_sample": 200,
+  "status": "awaiting_manual_labels",
+  "tp": 0
+}

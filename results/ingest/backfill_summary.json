@@ -1,0 +1,1929 @@
+{
+  "from": "2011-01",
+  "http": {
+    "cache_hits": 0,
+    "failures": 0,
+    "requests": 760,
+    "retries": 0
+  },
+  "months_failed_gate": [],
+  "months_missing_thread": [
+    "2011-01",
+    "2011-02",
+    "2011-03"
+  ],
+  "months_requested": 190,
+  "months_with_thread": 187,
+  "per_month": [
+    {
+      "fetched": 0,
+      "gate": "skipped_no_thread",
+      "kept": 0,
+      "month": "2011-01",
+      "story_id": null,
+      "title": null
+    },
+    {
+      "fetched": 0,
+      "gate": "skipped_no_thread",
+      "kept": 0,
+      "month": "2011-02",
+      "story_id": null,
+      "title": null
+    },
+    {
+      "fetched": 0,
+      "gate": "skipped_no_thread",
+      "kept": 0,
+      "month": "2011-03",
+      "story_id": null,
+      "title": null
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 295,
+      "gate": "passed",
+      "kept": 218,
+      "month": "2011-04",
+      "story_id": 2396027,
+      "title": "Ask HN: Who is Hiring? (April 2011)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 291,
+      "gate": "passed",
+      "kept": 216,
+      "month": "2011-05",
+      "story_id": 2503204,
+      "title": "Ask HN: Who is Hiring? (May 2011)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 327,
+      "gate": "passed",
+      "kept": 254,
+      "month": "2011-06",
+      "story_id": 2607052,
+      "title": "Ask HN: Who is Hiring? (June 2011)",
+      "warnings": []
+    },
+    {
+      "author": "Aloisius",
+      "fetched": 283,
+      "gate": "passed",
+      "kept": 224,
+      "month": "2011-07",
+      "story_id": 2719028,
+      "title": "Ask HN: Who is Hiring? (July 2011)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 306,
+      "gate": "passed",
+      "kept": 229,
+      "month": "2011-08",
+      "story_id": 2831646,
+      "title": "Ask HN: Who is Hiring? (August 2011)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 232,
+      "gate": "passed",
+      "kept": 190,
+      "month": "2011-09",
+      "story_id": 2949787,
+      "title": "Ask HN: Who is Hiring? (September 2011)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 273,
+      "gate": "passed",
+      "kept": 195,
+      "month": "2011-10",
+      "story_id": 3060221,
+      "title": "Ask HN: Who is Hiring? (October 2011)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 294,
+      "gate": "passed",
+      "kept": 230,
+      "month": "2011-11",
+      "story_id": 3181796,
+      "title": "Ask HN: Who is Hiring? (November 2011)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 4,
+      "gate": "passed",
+      "kept": 1,
+      "month": "2011-12",
+      "story_id": 3300371,
+      "title": "Ask HN: Who is Hiring? (December 2011)",
+      "warnings": [
+        "row count 1 differs from previous month (230) by 100% > 60%"
+      ]
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 223,
+      "gate": "passed",
+      "kept": 148,
+      "month": "2012-01",
+      "story_id": 3412900,
+      "title": "Ask HN: Who is Hiring? (January 2012)",
+      "warnings": [
+        "row count 148 differs from previous month (1) by 14700% > 60%"
+      ]
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 230,
+      "gate": "passed",
+      "kept": 201,
+      "month": "2012-02",
+      "story_id": 3537881,
+      "title": "Ask HN: Who is Hiring? (February 2012)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 294,
+      "gate": "passed",
+      "kept": 248,
+      "month": "2012-03",
+      "story_id": 3652041,
+      "title": "Ask HN: Who is Hiring? (March 2012)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 223,
+      "gate": "passed",
+      "kept": 201,
+      "month": "2012-04",
+      "story_id": 3783657,
+      "title": "Ask HN: Who is Hiring? (April 2012)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 269,
+      "gate": "passed",
+      "kept": 230,
+      "month": "2012-05",
+      "story_id": 3913997,
+      "title": "Ask HN: Who Is Hiring? (May 2012)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 254,
+      "gate": "passed",
+      "kept": 226,
+      "month": "2012-06",
+      "story_id": 4053076,
+      "title": "Ask HN: Who Is Hiring? (June 2012)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 244,
+      "gate": "passed",
+      "kept": 189,
+      "month": "2012-07",
+      "story_id": 4184755,
+      "title": "Ask HN: Who Is Hiring? (July 2012)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 291,
+      "gate": "passed",
+      "kept": 244,
+      "month": "2012-08",
+      "story_id": 4323597,
+      "title": "Ask HN: Who Is Hiring? (August 2012)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 299,
+      "gate": "passed",
+      "kept": 212,
+      "month": "2012-09",
+      "story_id": 4463689,
+      "title": "Ask HN: Who Is Hiring? (September 2012)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 294,
+      "gate": "passed",
+      "kept": 247,
+      "month": "2012-10",
+      "story_id": 4596375,
+      "title": "Ask HN: Who Is Hiring? (October 2012)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 261,
+      "gate": "passed",
+      "kept": 219,
+      "month": "2012-11",
+      "story_id": 4727241,
+      "title": "Ask HN: Who Is Hiring? (November 2012)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 284,
+      "gate": "passed",
+      "kept": 229,
+      "month": "2012-12",
+      "story_id": 4857714,
+      "title": "Ask HN: Who is hiring? (December 2012)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 254,
+      "gate": "passed",
+      "kept": 191,
+      "month": "2013-01",
+      "story_id": 4992617,
+      "title": "Ask HN: Who is hiring? (January 2013)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 256,
+      "gate": "passed",
+      "kept": 217,
+      "month": "2013-02",
+      "story_id": 5150834,
+      "title": "Ask HN: Who is hiring? (February 2013)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 360,
+      "gate": "passed",
+      "kept": 289,
+      "month": "2013-03",
+      "story_id": 5304169,
+      "title": "Ask HN: Who is hiring? (March 2013)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 420,
+      "gate": "passed",
+      "kept": 343,
+      "month": "2013-04",
+      "story_id": 5472746,
+      "title": "Ask HN: Who is hiring? (April 2013)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 437,
+      "gate": "passed",
+      "kept": 318,
+      "month": "2013-05",
+      "story_id": 5637663,
+      "title": "Ask HN: Who is hiring? (May 2013)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 362,
+      "gate": "passed",
+      "kept": 261,
+      "month": "2013-06",
+      "story_id": 5803764,
+      "title": "Ask HN: Who is hiring? (June 2013)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 367,
+      "gate": "passed",
+      "kept": 288,
+      "month": "2013-07",
+      "story_id": 5970187,
+      "title": "Ask HN: Who is hiring? (July 2013)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 385,
+      "gate": "passed",
+      "kept": 306,
+      "month": "2013-08",
+      "story_id": 6139927,
+      "title": "Ask HN: Who is hiring? (August 2013)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 374,
+      "gate": "passed",
+      "kept": 238,
+      "month": "2013-09",
+      "story_id": 6310234,
+      "title": "Ask HN: Who is hiring? (September 2013)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 561,
+      "gate": "passed",
+      "kept": 423,
+      "month": "2013-10",
+      "story_id": 6475879,
+      "title": "Ask HN: Who is hiring? (October 2013)",
+      "warnings": [
+        "row count 423 differs from previous month (238) by 78% > 60%"
+      ]
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 389,
+      "gate": "passed",
+      "kept": 296,
+      "month": "2013-11",
+      "story_id": 6653437,
+      "title": "Ask HN: Who is hiring? (November 2013)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 321,
+      "gate": "passed",
+      "kept": 262,
+      "month": "2013-12",
+      "story_id": 6827554,
+      "title": "Ask HN: Who is hiring? (December 2013)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 287,
+      "gate": "passed",
+      "kept": 222,
+      "month": "2014-01",
+      "story_id": 6995020,
+      "title": "Ask HN: Who is hiring? (January 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 381,
+      "gate": "passed",
+      "kept": 328,
+      "month": "2014-02",
+      "story_id": 7162197,
+      "title": "Ask HN: Who is hiring? (February 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 429,
+      "gate": "passed",
+      "kept": 336,
+      "month": "2014-03",
+      "story_id": 7324236,
+      "title": "Ask HN: Who is hiring? (March 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 527,
+      "gate": "passed",
+      "kept": 353,
+      "month": "2014-04",
+      "story_id": 7507765,
+      "title": "Ask HN: Who is hiring? (April 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 491,
+      "gate": "passed",
+      "kept": 407,
+      "month": "2014-05",
+      "story_id": 7679431,
+      "title": "Ask HN: Who is hiring? (May 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 422,
+      "gate": "passed",
+      "kept": 343,
+      "month": "2014-06",
+      "story_id": 7829042,
+      "title": "Ask HN: Who is hiring? (June 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 492,
+      "gate": "passed",
+      "kept": 418,
+      "month": "2014-07",
+      "story_id": 7970366,
+      "title": "Ask HN: Who is hiring? (July 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 584,
+      "gate": "passed",
+      "kept": 477,
+      "month": "2014-08",
+      "story_id": 8120070,
+      "title": "Ask HN: Who is hiring? (August 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 324,
+      "gate": "passed",
+      "kept": 279,
+      "month": "2014-09",
+      "story_id": 8252715,
+      "title": "Ask HN: Who is hiring? (September 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 424,
+      "gate": "passed",
+      "kept": 351,
+      "month": "2014-10",
+      "story_id": 8394339,
+      "title": "Ask HN: Who is hiring? (October 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 419,
+      "gate": "passed",
+      "kept": 340,
+      "month": "2014-11",
+      "story_id": 8542892,
+      "title": "Ask HN: Who is hiring? (November 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 565,
+      "gate": "passed",
+      "kept": 463,
+      "month": "2014-12",
+      "story_id": 8681040,
+      "title": "Ask HN: Who is hiring? (December 2014)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 330,
+      "gate": "passed",
+      "kept": 271,
+      "month": "2015-01",
+      "story_id": 8822808,
+      "title": "Ask HN: Who is hiring? (January 2015)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 637,
+      "gate": "passed",
+      "kept": 493,
+      "month": "2015-02",
+      "story_id": 8980047,
+      "title": "Ask HN: Who is hiring? (February 2015)",
+      "warnings": [
+        "row count 493 differs from previous month (271) by 82% > 60%"
+      ]
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 677,
+      "gate": "passed",
+      "kept": 505,
+      "month": "2015-03",
+      "story_id": 9127232,
+      "title": "Ask HN: Who is hiring? (March 2015)",
+      "warnings": []
+    },
+    {
+      "author": "_whoishiring",
+      "fetched": 949,
+      "gate": "passed",
+      "kept": 746,
+      "month": "2015-04",
+      "story_id": 9303396,
+      "title": "Ask HN: Who is hiring? (April 2015)",
+      "warnings": []
+    },
+    {
+      "author": "_whoishiring",
+      "fetched": 892,
+      "gate": "passed",
+      "kept": 666,
+      "month": "2015-05",
+      "story_id": 9471287,
+      "title": "Ask HN: Who is hiring? (May 2015)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 757,
+      "gate": "passed",
+      "kept": 566,
+      "month": "2015-06",
+      "story_id": 9639001,
+      "title": "Ask HN: Who is hiring? (June 2015)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1086,
+      "gate": "passed",
+      "kept": 835,
+      "month": "2015-07",
+      "story_id": 9812245,
+      "title": "Ask HN: Who is hiring? (July 2015)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 969,
+      "gate": "passed",
+      "kept": 785,
+      "month": "2015-08",
+      "story_id": 9996333,
+      "title": "Ask HN: Who is hiring? (August 2015)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 865,
+      "gate": "passed",
+      "kept": 699,
+      "month": "2015-09",
+      "story_id": 10152809,
+      "title": "Ask HN: Who is hiring? (September 2015)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 698,
+      "gate": "passed",
+      "kept": 620,
+      "month": "2015-10",
+      "story_id": 10311580,
+      "title": "Ask HN: Who is hiring? (October 2015)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 880,
+      "gate": "passed",
+      "kept": 701,
+      "month": "2015-11",
+      "story_id": 10492086,
+      "title": "Ask HN: Who is hiring? (November 2015)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 427,
+      "gate": "passed",
+      "kept": 358,
+      "month": "2015-12",
+      "story_id": 10655740,
+      "title": "Ask HN: Who is hiring? (December 2015)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 468,
+      "gate": "passed",
+      "kept": 371,
+      "month": "2016-01",
+      "story_id": 10822019,
+      "title": "Ask HN: Who is hiring? (January 2016)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 794,
+      "gate": "passed",
+      "kept": 648,
+      "month": "2016-02",
+      "story_id": 11012044,
+      "title": "Ask HN: Who is hiring? (February 2016)",
+      "warnings": [
+        "row count 648 differs from previous month (371) by 75% > 60%"
+      ]
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 814,
+      "gate": "passed",
+      "kept": 665,
+      "month": "2016-03",
+      "story_id": 11202954,
+      "title": "Ask HN: Who is hiring? (March 2016)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 713,
+      "gate": "passed",
+      "kept": 593,
+      "month": "2016-04",
+      "story_id": 11405239,
+      "title": "Ask HN: Who is hiring? (April 2016)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 936,
+      "gate": "passed",
+      "kept": 666,
+      "month": "2016-05",
+      "story_id": 11611867,
+      "title": "Ask HN: Who is hiring? (May 2016)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1002,
+      "gate": "passed",
+      "kept": 772,
+      "month": "2016-06",
+      "story_id": 11814828,
+      "title": "Ask HN: Who is hiring? (June 2016)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 894,
+      "gate": "passed",
+      "kept": 686,
+      "month": "2016-07",
+      "story_id": 12016568,
+      "title": "Ask HN: Who is hiring? (July 2016)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 940,
+      "gate": "passed",
+      "kept": 735,
+      "month": "2016-08",
+      "story_id": 12202865,
+      "title": "Ask HN: Who is hiring? (August 2016)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 906,
+      "gate": "passed",
+      "kept": 642,
+      "month": "2016-09",
+      "story_id": 12405698,
+      "title": "Ask HN: Who is hiring? (September 2016)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 976,
+      "gate": "passed",
+      "kept": 783,
+      "month": "2016-10",
+      "story_id": 12627852,
+      "title": "Ask HN: Who is hiring? (October 2016)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1118,
+      "gate": "passed",
+      "kept": 826,
+      "month": "2016-11",
+      "story_id": 12846216,
+      "title": "Ask HN: Who is hiring? (November 2016)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 828,
+      "gate": "passed",
+      "kept": 633,
+      "month": "2016-12",
+      "story_id": 13080280,
+      "title": "Ask HN: Who is hiring? (December 2016)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 930,
+      "gate": "passed",
+      "kept": 614,
+      "month": "2017-01",
+      "story_id": 13301832,
+      "title": "Ask HN: Who is hiring? (January 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1222,
+      "gate": "passed",
+      "kept": 940,
+      "month": "2017-02",
+      "story_id": 13541679,
+      "title": "Ask HN: Who is hiring? (February 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1053,
+      "gate": "passed",
+      "kept": 785,
+      "month": "2017-03",
+      "story_id": 13764728,
+      "title": "Ask HN: Who is hiring? (March 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 941,
+      "gate": "passed",
+      "kept": 711,
+      "month": "2017-04",
+      "story_id": 14023198,
+      "title": "Ask HN: Who is hiring? (April 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1079,
+      "gate": "passed",
+      "kept": 829,
+      "month": "2017-05",
+      "story_id": 14238005,
+      "title": "Ask HN: Who is hiring? (May 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 986,
+      "gate": "passed",
+      "kept": 730,
+      "month": "2017-06",
+      "story_id": 14460777,
+      "title": "Ask HN: Who is hiring? (June 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 969,
+      "gate": "passed",
+      "kept": 756,
+      "month": "2017-07",
+      "story_id": 14688684,
+      "title": "Ask HN: Who is hiring? (July 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 941,
+      "gate": "passed",
+      "kept": 722,
+      "month": "2017-08",
+      "story_id": 14901313,
+      "title": "Ask HN: Who is hiring? (August 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 965,
+      "gate": "passed",
+      "kept": 779,
+      "month": "2017-09",
+      "story_id": 15148885,
+      "title": "Ask HN: Who is hiring? (September 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1122,
+      "gate": "passed",
+      "kept": 883,
+      "month": "2017-10",
+      "story_id": 15384262,
+      "title": "Ask HN: Who is hiring? (October 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1180,
+      "gate": "passed",
+      "kept": 902,
+      "month": "2017-11",
+      "story_id": 15601729,
+      "title": "Ask HN: Who is hiring? (November 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 982,
+      "gate": "passed",
+      "kept": 775,
+      "month": "2017-12",
+      "story_id": 15824597,
+      "title": "Ask HN: Who is hiring? (December 2017)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 894,
+      "gate": "passed",
+      "kept": 663,
+      "month": "2018-01",
+      "story_id": 16052538,
+      "title": "Ask HN: Who is hiring? (January 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1050,
+      "gate": "passed",
+      "kept": 787,
+      "month": "2018-02",
+      "story_id": 16282819,
+      "title": "Ask HN: Who is hiring? (February 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1174,
+      "gate": "passed",
+      "kept": 865,
+      "month": "2018-03",
+      "story_id": 16492994,
+      "title": "Ask HN: Who is hiring? (March 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1071,
+      "gate": "passed",
+      "kept": 839,
+      "month": "2018-04",
+      "story_id": 16735011,
+      "title": "Ask HN: Who is hiring? (April 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1179,
+      "gate": "passed",
+      "kept": 971,
+      "month": "2018-05",
+      "story_id": 16967543,
+      "title": "Ask HN: Who is hiring? (May 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 897,
+      "gate": "passed",
+      "kept": 761,
+      "month": "2018-06",
+      "story_id": 17205865,
+      "title": "Ask HN: Who is hiring? (June 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 844,
+      "gate": "passed",
+      "kept": 733,
+      "month": "2018-07",
+      "story_id": 17442187,
+      "title": "Ask HN: Who is hiring? (July 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1013,
+      "gate": "passed",
+      "kept": 867,
+      "month": "2018-08",
+      "story_id": 17663077,
+      "title": "Ask HN: Who is hiring? (August 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 906,
+      "gate": "passed",
+      "kept": 691,
+      "month": "2018-09",
+      "story_id": 17902901,
+      "title": "Ask HN: Who is hiring? (September 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1089,
+      "gate": "passed",
+      "kept": 894,
+      "month": "2018-10",
+      "story_id": 18113144,
+      "title": "Ask HN: Who is hiring? (October 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1034,
+      "gate": "passed",
+      "kept": 860,
+      "month": "2018-11",
+      "story_id": 18354503,
+      "title": "Ask HN: Who is hiring? (November 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 928,
+      "gate": "passed",
+      "kept": 756,
+      "month": "2018-12",
+      "story_id": 18589702,
+      "title": "Ask HN: Who is hiring? (December 2018)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 951,
+      "gate": "passed",
+      "kept": 765,
+      "month": "2019-01",
+      "story_id": 18807017,
+      "title": "Ask HN: Who is hiring? (January 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 828,
+      "gate": "passed",
+      "kept": 692,
+      "month": "2019-02",
+      "story_id": 19055166,
+      "title": "Ask HN: Who is hiring? (February 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 865,
+      "gate": "passed",
+      "kept": 747,
+      "month": "2019-03",
+      "story_id": 19281834,
+      "title": "Ask HN: Who is hiring? (March 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 858,
+      "gate": "passed",
+      "kept": 740,
+      "month": "2019-04",
+      "story_id": 19543940,
+      "title": "Ask HN: Who is hiring? (April 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1007,
+      "gate": "passed",
+      "kept": 816,
+      "month": "2019-05",
+      "story_id": 19797594,
+      "title": "Ask HN: Who is hiring? (May 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 787,
+      "gate": "passed",
+      "kept": 660,
+      "month": "2019-06",
+      "story_id": 20083795,
+      "title": "Ask HN: Who is hiring? (June 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 892,
+      "gate": "passed",
+      "kept": 757,
+      "month": "2019-07",
+      "story_id": 20325925,
+      "title": "Ask HN: Who is hiring? (July 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 845,
+      "gate": "passed",
+      "kept": 727,
+      "month": "2019-08",
+      "story_id": 20584311,
+      "title": "Ask HN: Who is hiring? (August 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 703,
+      "gate": "passed",
+      "kept": 607,
+      "month": "2019-09",
+      "story_id": 20867123,
+      "title": "Ask HN: Who is hiring? (September 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 891,
+      "gate": "passed",
+      "kept": 718,
+      "month": "2019-10",
+      "story_id": 21126014,
+      "title": "Ask HN: Who is hiring? (October 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 732,
+      "gate": "passed",
+      "kept": 626,
+      "month": "2019-11",
+      "story_id": 21419536,
+      "title": "Ask HN: Who is hiring? (November 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 667,
+      "gate": "passed",
+      "kept": 584,
+      "month": "2019-12",
+      "story_id": 21683554,
+      "title": "Ask HN: Who is hiring? (December 2019)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 694,
+      "gate": "passed",
+      "kept": 574,
+      "month": "2020-01",
+      "story_id": 21936440,
+      "title": "Ask HN: Who is hiring? (January 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 673,
+      "gate": "passed",
+      "kept": 579,
+      "month": "2020-02",
+      "story_id": 22225314,
+      "title": "Ask HN: Who is hiring? (February 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 769,
+      "gate": "passed",
+      "kept": 644,
+      "month": "2020-03",
+      "story_id": 22465476,
+      "title": "Ask HN: Who is hiring? (March 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 598,
+      "gate": "passed",
+      "kept": 457,
+      "month": "2020-04",
+      "story_id": 22749308,
+      "title": "Ask HN: Who is hiring? (April 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 684,
+      "gate": "passed",
+      "kept": 499,
+      "month": "2020-05",
+      "story_id": 23042618,
+      "title": "Ask HN: Who is hiring? (May 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 657,
+      "gate": "passed",
+      "kept": 506,
+      "month": "2020-06",
+      "story_id": 23379196,
+      "title": "Ask HN: Who is hiring? (June 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 677,
+      "gate": "passed",
+      "kept": 538,
+      "month": "2020-07",
+      "story_id": 23702122,
+      "title": "Ask HN: Who is hiring? (July 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 824,
+      "gate": "passed",
+      "kept": 640,
+      "month": "2020-08",
+      "story_id": 24038520,
+      "title": "Ask HN: Who is hiring? (August 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 696,
+      "gate": "passed",
+      "kept": 600,
+      "month": "2020-09",
+      "story_id": 24342498,
+      "title": "Ask HN: Who is hiring? (September 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 808,
+      "gate": "passed",
+      "kept": 710,
+      "month": "2020-10",
+      "story_id": 24651639,
+      "title": "Ask HN: Who is hiring? (October 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 802,
+      "gate": "passed",
+      "kept": 692,
+      "month": "2020-11",
+      "story_id": 24969524,
+      "title": "Ask HN: Who is hiring? (November 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 759,
+      "gate": "passed",
+      "kept": 685,
+      "month": "2020-12",
+      "story_id": 25266288,
+      "title": "Ask HN: Who is hiring? (December 2020)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 839,
+      "gate": "passed",
+      "kept": 703,
+      "month": "2021-01",
+      "story_id": 25632982,
+      "title": "Ask HN: Who is hiring? (January 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1043,
+      "gate": "passed",
+      "kept": 937,
+      "month": "2021-02",
+      "story_id": 25989764,
+      "title": "Ask HN: Who is hiring? (February 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 959,
+      "gate": "passed",
+      "kept": 903,
+      "month": "2021-03",
+      "story_id": 26304051,
+      "title": "Ask HN: Who is hiring? (March 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 960,
+      "gate": "passed",
+      "kept": 871,
+      "month": "2021-04",
+      "story_id": 26661443,
+      "title": "Ask HN: Who is hiring? (April 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 915,
+      "gate": "passed",
+      "kept": 843,
+      "month": "2021-05",
+      "story_id": 27025922,
+      "title": "Ask HN: Who is hiring? (May 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1030,
+      "gate": "passed",
+      "kept": 966,
+      "month": "2021-06",
+      "story_id": 27355392,
+      "title": "Ask HN: Who is hiring? (June 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 976,
+      "gate": "passed",
+      "kept": 877,
+      "month": "2021-07",
+      "story_id": 27699704,
+      "title": "Ask HN: Who is hiring? (July 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 895,
+      "gate": "passed",
+      "kept": 833,
+      "month": "2021-08",
+      "story_id": 28037366,
+      "title": "Ask HN: Who is hiring? (August 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 951,
+      "gate": "passed",
+      "kept": 893,
+      "month": "2021-09",
+      "story_id": 28380661,
+      "title": "Ask HN: Who is hiring? (September 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 837,
+      "gate": "passed",
+      "kept": 770,
+      "month": "2021-10",
+      "story_id": 28719320,
+      "title": "Ask HN: Who is hiring? (October 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 1007,
+      "gate": "passed",
+      "kept": 942,
+      "month": "2021-11",
+      "story_id": 29067493,
+      "title": "Ask HN: Who is hiring? (November 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 813,
+      "gate": "passed",
+      "kept": 738,
+      "month": "2021-12",
+      "story_id": 29405056,
+      "title": "Ask HN: Who is hiring? (December 2021)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 757,
+      "gate": "passed",
+      "kept": 661,
+      "month": "2022-01",
+      "story_id": 29782099,
+      "title": "Ask HN: Who is hiring? (January 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 871,
+      "gate": "passed",
+      "kept": 800,
+      "month": "2022-02",
+      "story_id": 30164271,
+      "title": "Ask HN: Who is hiring? (February 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 854,
+      "gate": "passed",
+      "kept": 784,
+      "month": "2022-03",
+      "story_id": 30515750,
+      "title": "Ask HN: Who is hiring? (March 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 785,
+      "gate": "passed",
+      "kept": 742,
+      "month": "2022-04",
+      "story_id": 30878761,
+      "title": "Ask HN: Who is hiring? (April 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 829,
+      "gate": "passed",
+      "kept": 755,
+      "month": "2022-05",
+      "story_id": 31235968,
+      "title": "Ask HN: Who is hiring? (May 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 841,
+      "gate": "passed",
+      "kept": 723,
+      "month": "2022-06",
+      "story_id": 31582796,
+      "title": "Ask HN: Who is hiring? (June 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 605,
+      "gate": "passed",
+      "kept": 523,
+      "month": "2022-07",
+      "story_id": 31947297,
+      "title": "Ask HN: Who is hiring? (July 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 745,
+      "gate": "passed",
+      "kept": 631,
+      "month": "2022-08",
+      "story_id": 32306920,
+      "title": "Ask HN: Who is hiring? (August 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 609,
+      "gate": "passed",
+      "kept": 503,
+      "month": "2022-09",
+      "story_id": 32677265,
+      "title": "Ask HN: Who is hiring? (September 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 550,
+      "gate": "passed",
+      "kept": 455,
+      "month": "2022-10",
+      "story_id": 33068421,
+      "title": "Ask HN: Who is hiring? (October 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 627,
+      "gate": "passed",
+      "kept": 524,
+      "month": "2022-11",
+      "story_id": 33422129,
+      "title": "Ask HN: Who is hiring? (November 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 563,
+      "gate": "passed",
+      "kept": 481,
+      "month": "2022-12",
+      "story_id": 33818037,
+      "title": "Ask HN: Who is hiring? (December 2022)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 522,
+      "gate": "passed",
+      "kept": 363,
+      "month": "2023-01",
+      "story_id": 34219335,
+      "title": "Ask HN: Who is hiring? (January 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 583,
+      "gate": "passed",
+      "kept": 436,
+      "month": "2023-02",
+      "story_id": 34612353,
+      "title": "Ask HN: Who is hiring? (February 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 629,
+      "gate": "passed",
+      "kept": 406,
+      "month": "2023-03",
+      "story_id": 34983767,
+      "title": "Ask HN: Who is hiring? (March 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 573,
+      "gate": "passed",
+      "kept": 352,
+      "month": "2023-04",
+      "story_id": 35424807,
+      "title": "Ask HN: Who is hiring? (April 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 499,
+      "gate": "passed",
+      "kept": 342,
+      "month": "2023-05",
+      "story_id": 35773707,
+      "title": "Ask HN: Who is hiring? (May 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 528,
+      "gate": "passed",
+      "kept": 331,
+      "month": "2023-06",
+      "story_id": 36152014,
+      "title": "Ask HN: Who is hiring? (June 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 444,
+      "gate": "passed",
+      "kept": 306,
+      "month": "2023-07",
+      "story_id": 36573871,
+      "title": "Ask HN: Who is hiring? (July 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 527,
+      "gate": "passed",
+      "kept": 342,
+      "month": "2023-08",
+      "story_id": 36956867,
+      "title": "Ask HN: Who is hiring? (August 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 494,
+      "gate": "passed",
+      "kept": 296,
+      "month": "2023-09",
+      "story_id": 37351667,
+      "title": "Ask HN: Who is hiring? (September 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 638,
+      "gate": "passed",
+      "kept": 320,
+      "month": "2023-10",
+      "story_id": 37739028,
+      "title": "Ask HN: Who is hiring? (October 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 596,
+      "gate": "passed",
+      "kept": 362,
+      "month": "2023-11",
+      "story_id": 38099086,
+      "title": "Ask HN: Who is hiring? (November 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 501,
+      "gate": "passed",
+      "kept": 312,
+      "month": "2023-12",
+      "story_id": 38490811,
+      "title": "Ask HN: Who is hiring? (December 2023)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 482,
+      "gate": "passed",
+      "kept": 277,
+      "month": "2024-01",
+      "story_id": 38842977,
+      "title": "Ask HN: Who is hiring? (January 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 535,
+      "gate": "passed",
+      "kept": 340,
+      "month": "2024-02",
+      "story_id": 39217310,
+      "title": "Ask HN: Who is hiring? (February 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 482,
+      "gate": "passed",
+      "kept": 299,
+      "month": "2024-03",
+      "story_id": 39562986,
+      "title": "Ask HN: Who is hiring? (March 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 483,
+      "gate": "passed",
+      "kept": 289,
+      "month": "2024-04",
+      "story_id": 39894820,
+      "title": "Ask HN: Who is hiring? (April 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 729,
+      "gate": "passed",
+      "kept": 396,
+      "month": "2024-05",
+      "story_id": 40224213,
+      "title": "Ask HN: Who is hiring? (May 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 548,
+      "gate": "passed",
+      "kept": 339,
+      "month": "2024-06",
+      "story_id": 40563283,
+      "title": "Ask HN: Who is hiring? (June 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 603,
+      "gate": "passed",
+      "kept": 379,
+      "month": "2024-07",
+      "story_id": 40846428,
+      "title": "Ask HN: Who is hiring? (July 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 463,
+      "gate": "passed",
+      "kept": 322,
+      "month": "2024-08",
+      "story_id": 41129813,
+      "title": "Ask HN: Who is hiring? (August 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 483,
+      "gate": "passed",
+      "kept": 303,
+      "month": "2024-09",
+      "story_id": 41425910,
+      "title": "Ask HN: Who is hiring? (September 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 480,
+      "gate": "passed",
+      "kept": 329,
+      "month": "2024-10",
+      "story_id": 41709301,
+      "title": "Ask HN: Who is hiring? (October 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 492,
+      "gate": "passed",
+      "kept": 317,
+      "month": "2024-11",
+      "story_id": 42017580,
+      "title": "Ask HN: Who is hiring? (November 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 471,
+      "gate": "passed",
+      "kept": 330,
+      "month": "2024-12",
+      "story_id": 42297424,
+      "title": "Ask HN: Who is hiring? (December 2024)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 481,
+      "gate": "passed",
+      "kept": 276,
+      "month": "2025-01",
+      "story_id": 42575537,
+      "title": "Ask HN: Who is hiring? (January 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 616,
+      "gate": "passed",
+      "kept": 396,
+      "month": "2025-02",
+      "story_id": 42919502,
+      "title": "Ask HN: Who is hiring? (February 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 516,
+      "gate": "passed",
+      "kept": 354,
+      "month": "2025-03",
+      "story_id": 43243024,
+      "title": "Ask HN: Who is hiring? (March 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 491,
+      "gate": "passed",
+      "kept": 306,
+      "month": "2025-04",
+      "story_id": 43547611,
+      "title": "Ask HN: Who is hiring? (April 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 433,
+      "gate": "passed",
+      "kept": 300,
+      "month": "2025-05",
+      "story_id": 43858554,
+      "title": "Ask HN: Who is hiring? (May 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 523,
+      "gate": "passed",
+      "kept": 357,
+      "month": "2025-06",
+      "story_id": 44159528,
+      "title": "Ask HN: Who is hiring? (June 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 453,
+      "gate": "passed",
+      "kept": 331,
+      "month": "2025-07",
+      "story_id": 44434576,
+      "title": "Ask HN: Who is hiring? (July 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 445,
+      "gate": "passed",
+      "kept": 305,
+      "month": "2025-08",
+      "story_id": 44757794,
+      "title": "Ask HN: Who is hiring? (August 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 443,
+      "gate": "passed",
+      "kept": 299,
+      "month": "2025-09",
+      "story_id": 45093192,
+      "title": "Ask HN: Who is hiring? (September 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 464,
+      "gate": "passed",
+      "kept": 340,
+      "month": "2025-10",
+      "story_id": 45438503,
+      "title": "Ask HN: Who is hiring? (October 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 579,
+      "gate": "passed",
+      "kept": 391,
+      "month": "2025-11",
+      "story_id": 45800465,
+      "title": "Ask HN: Who is hiring? (November 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 545,
+      "gate": "passed",
+      "kept": 377,
+      "month": "2025-12",
+      "story_id": 46108941,
+      "title": "Ask HN: Who is hiring? (December 2025)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 402,
+      "gate": "passed",
+      "kept": 256,
+      "month": "2026-01",
+      "story_id": 46466074,
+      "title": "Ask HN: Who is hiring? (January 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 592,
+      "gate": "passed",
+      "kept": 410,
+      "month": "2026-02",
+      "story_id": 46857488,
+      "title": "Ask HN: Who is hiring? (February 2026)",
+      "warnings": [
+        "row count 410 differs from previous month (256) by 60% > 60%"
+      ]
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 462,
+      "gate": "passed",
+      "kept": 317,
+      "month": "2026-03",
+      "story_id": 47219668,
+      "title": "Ask HN: Who is hiring? (March 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 457,
+      "gate": "passed",
+      "kept": 328,
+      "month": "2026-04",
+      "story_id": 47601859,
+      "title": "Ask HN: Who is hiring? (April 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 542,
+      "gate": "passed",
+      "kept": 317,
+      "month": "2026-05",
+      "story_id": 47975571,
+      "title": "Ask HN: Who is hiring? (May 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 489,
+      "gate": "passed",
+      "kept": 312,
+      "month": "2026-06",
+      "story_id": 48357725,
+      "title": "Ask HN: Who is hiring? (June 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 417,
+      "gate": "passed",
+      "kept": 257,
+      "month": "2026-07",
+      "story_id": 48747976,
+      "title": "Ask HN: Who is hiring? (July 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 372,
+      "gate": "passed",
+      "kept": 226,
+      "month": "2026-08",
+      "story_id": 49156683,
+      "title": "Ask HN: Who is hiring? (August 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 389,
+      "gate": "passed",
+      "kept": 248,
+      "month": "2026-09",
+      "story_id": 49522897,
+      "title": "Ask HN: Who is hiring? (September 2026)",
+      "warnings": []
+    },
+    {
+      "author": "whoishiring",
+      "fetched": 391,
+      "gate": "passed",
+      "kept": 261,
+      "month": "2026-10",
+      "story_id": 49922569,
+      "title": "Ask HN: Who is hiring? (October 2026)",
+      "warnings": []
+    }
+  ],
+  "run_at": "2026-11-02T10:16:12+00:00",
+  "to": "2026-10",
+  "total_comments_fetched": 121122,
+  "total_postings_kept": 94951
+}

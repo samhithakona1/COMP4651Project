@@ -1,0 +1,53 @@
+{
+  "method": "resample real HN postings with replacement, new ids",
+  "real_postings": 94951,
+  "scales": {
+    "10k": {
+      "bridge_rows": 34678,
+      "fact_rows": 10000,
+      "is_synthetic": true,
+      "processed_dir": "/data/synthetic/n=10k/processed",
+      "raw_dir": "/data/synthetic/n=10k/raw",
+      "real_fact_rows": 94951,
+      "rows": 10000,
+      "salaried_share": 0.065
+    },
+    "1m": {
+      "bridge_rows": 3452385,
+      "fact_rows": 1000000,
+      "is_synthetic": true,
+      "processed_dir": "/data/synthetic/n=1m/processed",
+      "raw_dir": "/data/synthetic/n=1m/raw",
+      "real_fact_rows": 94951,
+      "rows": 1000000,
+      "salaried_share": 0.06481
+    },
+    "200k": {
+      "bridge_rows": 689062,
+      "fact_rows": 200000,
+      "is_synthetic": true,
+      "processed_dir": "/data/synthetic/n=200k/processed",
+      "raw_dir": "/data/synthetic/n=200k/raw",
+      "real_fact_rows": 94951,
+      "rows": 200000,
+      "salaried_share": 0.065375
+    },
+    "50k": {
+      "bridge_rows": 172114,
+      "fact_rows": 50000,
+      "is_synthetic": true,
+      "processed_dir": "/data/synthetic/n=50k/processed",
+      "raw_dir": "/data/synthetic/n=50k/raw",
+      "real_fact_rows": 94951,
+      "rows": 50000,
+      "salaried_share": 0.06456
+    },
+    "real": {
+      "is_synthetic": false,
+      "processed_dir": "/data/processed",
+      "raw_dir": "/data/raw",
+      "rows": 94951
+    }
+  },
+  "seed": 4651
+}

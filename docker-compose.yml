@@ -1,0 +1,149 @@
+# Origin: original
+# Single-machine stack: PostgreSQL 16, Airflow 2.10 (LocalExecutor, scheduler runs spark-submit),
+# Streamlit. `runner` (profile tools) and `bench` (profile bench) reuse the Airflow image for
+# tests, analysis and benchmarks. Memory limits are hard caps; measured usage is in results/bench/.
+
+x-airflow-common: &airflow-common
+  image: tech-hiring/airflow:2.10.5
+  build:
+    context: .
+    dockerfile: docker/airflow/Dockerfile
+  env_file: .env
+  environment: &airflow-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__PARALLELISM: "4"
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__CORE__DAGS_FOLDER: /opt/project/dags
+    AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${AIRFLOW_DB:-airflow}
+    AIRFLOW__WEBSERVER__SECRET_KEY: ${AIRFLOW_WEBSERVER_SECRET_KEY}
+    AIRFLOW__WEBSERVER__WORKERS: "2"
+    AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "false"
+    AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: "true"
+    AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
+  volumes:
+    - ./:/opt/project
+    - ./data:/data
+    - airflow-logs:/opt/airflow/logs
+  user: "${AIRFLOW_UID:-50000}:0"
+  depends_on:
+    postgres:
+      condition: service_healthy
+
+services:
+  postgres:
+    image: postgres:16.6-bookworm
+    env_file: .env
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    # Small-box tuning (documented in README §Warehouse).
+    command: >
+      postgres
+      -c shared_buffers=256MB
+      -c work_mem=16MB
+      -c effective_cache_size=768MB
+      -c maintenance_work_mem=128MB
+      -c max_connections=60
+    ports:
+      - "${PG_HOST_PORT:-5433}:5432"
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+      - ./docker/postgres/00_init.sh:/docker-entrypoint-initdb.d/00_init.sh:ro
+      - ./sql:/sql:ro
+    mem_limit: 768m
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+  airflow-init:
+    <<: *airflow-common
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        set -e
+        airflow db migrate
+        airflow users create --role Admin --username "$${AIRFLOW_ADMIN_USER}" \
+          --password "$${AIRFLOW_ADMIN_PASSWORD}" --firstname Admin --lastname User \
+          --email admin@example.org || true
+    mem_limit: 1g
+    restart: "no"
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    mem_limit: 1g
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    # Spark (spark-submit, local mode) runs inside this container during spark_transform.
+    mem_limit: 3g
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8974/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    restart: unless-stopped
+
+  streamlit:
+    image: tech-hiring/streamlit:1.39.0
+    build:
+      context: .
+      dockerfile: docker/streamlit/Dockerfile
+    env_file: .env
+    volumes:
+      - ./app:/opt/project/app:ro
+      - ./sql:/opt/project/sql:ro
+      - ./src/common:/opt/project/src/common:ro
+      - ./src/__init__.py:/opt/project/src/__init__.py:ro
+      - ./results:/opt/project/results:ro
+    ports:
+      - "8501:8501"
+    mem_limit: 512m
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+  runner:
+    <<: *airflow-common
+    entrypoint: ["/usr/bin/env"]
+    command: ["python", "--version"]
+    mem_limit: 4g
+    profiles: ["tools"]
+
+  bench:
+    <<: *airflow-common
+    entrypoint: ["/usr/bin/env"]
+    command: ["python", "--version"]
+    mem_limit: ${BENCH_MEM_LIMIT:-6g}
+    memswap_limit: ${BENCH_MEM_LIMIT:-6g}
+    profiles: ["bench"]
+
+volumes:
+  pg-data:
+  airflow-logs:

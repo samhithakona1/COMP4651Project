@@ -1,0 +1,40 @@
+{
+  "checked_at": "2026-11-02T10:16:11+00:00",
+  "failures": [],
+  "month": "2016-02",
+  "sources": {
+    "hn": {
+      "api": "algolia",
+      "delta_vs_previous": 0.7466,
+      "dropped": 146,
+      "dropped_by_reason": {
+        "no_text": 0,
+        "reply": 146
+      },
+      "errors": [],
+      "fetched": 794,
+      "kept": 648,
+      "malformed": 0,
+      "malformed_by_reason": {
+        "bad_json": 0,
+        "missing_id": 0,
+        "missing_text": 0
+      },
+      "malformed_rate": 0.0,
+      "path": "/data/raw/source=hn/year=2016/month=02/part-0.jsonl",
+      "previous_month_rows": 371,
+      "required": true,
+      "rows": 648,
+      "source": "hn",
+      "story_id": 11012044,
+      "warnings": [
+        "row count 648 differs from previous month (371) by 75% > 60%"
+      ]
+    }
+  },
+  "status": "passed",
+  "thresholds": {
+    "max_delta": 0.6,
+    "max_malformed": 0.05
+  }
+}

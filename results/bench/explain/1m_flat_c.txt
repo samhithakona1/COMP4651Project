@@ -1,0 +1,30 @@
+-- scale=1m arm=flat workload=c (warm cache, recorded by query_latency.py)
+-- Origin: original
+SELECT year, quarter, work_modality, count(*) AS postings,
+       percentile_cont(0.5) WITHIN GROUP (ORDER BY salary_avg_usd) AS median_salary
+FROM raw_flat_postings
+WHERE work_modality IN ('Remote', 'Hybrid') AND salary_avg_usd IS NOT NULL
+GROUP BY year, quarter, work_modality
+ORDER BY year, quarter, work_modality;
+
+GroupAggregate  (cost=44629.92..48315.24 rows=256 width=28) (actual time=51.361..60.954 rows=83 loops=1)
+  Group Key: year, quarter, work_modality
+  Buffers: shared hit=15943 read=21819
+  ->  Gather Merge  (cost=44629.92..47891.92 rows=28008 width=18) (actual time=51.342..55.657 rows=38761 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=15943 read=21819
+        ->  Sort  (cost=43629.90..43659.08 rows=11670 width=18) (actual time=50.418..50.829 rows=12920 loops=3)
+              Sort Key: year, quarter, work_modality
+              Sort Method: quicksort  Memory: 989kB
+              Buffers: shared hit=15943 read=21819
+              Worker 0:  Sort Method: quicksort  Memory: 938kB
+              Worker 1:  Sort Method: quicksort  Memory: 901kB
+              ->  Parallel Seq Scan on raw_flat_postings  (cost=0.00..42841.56 rows=11670 width=18) (actual time=0.036..48.694 rows=12920 loops=3)
+                    Filter: ((salary_avg_usd IS NOT NULL) AND (work_modality = ANY ('{Remote,Hybrid}'::text[])))
+                    Rows Removed by Filter: 320413
+                    Buffers: shared hit=15813 read=21819
+Planning:
+  Buffers: shared hit=2
+Planning Time: 0.040 ms
+Execution Time: 60.969 ms

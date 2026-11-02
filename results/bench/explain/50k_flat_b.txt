@@ -1,0 +1,22 @@
+-- scale=50k arm=flat workload=b (warm cache, recorded by query_latency.py)
+-- Origin: original
+SELECT year, count(*) AS postings,
+       percentile_cont(0.5) WITHIN GROUP (ORDER BY salary_avg_usd) AS median_salary
+FROM raw_flat_postings
+WHERE 'Rust' = ANY(skills) AND salary_avg_usd IS NOT NULL
+GROUP BY year
+ORDER BY year;
+
+GroupAggregate  (cost=3048.32..3049.77 rows=16 width=18) (actual time=3.703..3.723 rows=10 loops=1)
+  Group Key: year
+  Buffers: shared hit=1920
+  ->  Sort  (cost=3048.32..3048.57 rows=100 width=8) (actual time=3.700..3.703 rows=153 loops=1)
+        Sort Key: year
+        Sort Method: quicksort  Memory: 30kB
+        Buffers: shared hit=1920
+        ->  Seq Scan on raw_flat_postings  (cost=0.00..3045.00 rows=100 width=8) (actual time=0.011..3.686 rows=153 loops=1)
+              Filter: ((salary_avg_usd IS NOT NULL) AND ('Rust'::text = ANY ((skills)::text[])))
+              Rows Removed by Filter: 49847
+              Buffers: shared hit=1920
+Planning Time: 0.012 ms
+Execution Time: 3.729 ms

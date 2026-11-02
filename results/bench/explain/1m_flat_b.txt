@@ -1,0 +1,28 @@
+-- scale=1m arm=flat workload=b (warm cache, recorded by query_latency.py)
+-- Origin: original
+SELECT year, count(*) AS postings,
+       percentile_cont(0.5) WITHIN GROUP (ORDER BY salary_avg_usd) AS median_salary
+FROM raw_flat_postings
+WHERE 'Rust' = ANY(skills) AND salary_avg_usd IS NOT NULL
+GROUP BY year
+ORDER BY year;
+
+GroupAggregate  (cost=48045.33..48274.81 rows=16 width=18) (actual time=59.949..61.534 rows=10 loops=1)
+  Group Key: year
+  Buffers: shared hit=10557 read=27195
+  ->  Gather Merge  (cost=48045.33..48256.48 rows=1813 width=8) (actual time=59.935..61.208 rows=3034 loops=1)
+        Workers Planned: 2
+        Workers Launched: 2
+        Buffers: shared hit=10557 read=27195
+        ->  Sort  (cost=47045.30..47047.19 rows=755 width=8) (actual time=59.028..59.059 rows=1011 loops=3)
+              Sort Key: year
+              Sort Method: quicksort  Memory: 89kB
+              Buffers: shared hit=10557 read=27195
+              Worker 0:  Sort Method: quicksort  Memory: 57kB
+              Worker 1:  Sort Method: quicksort  Memory: 57kB
+              ->  Parallel Seq Scan on raw_flat_postings  (cost=0.00..47009.21 rows=755 width=8) (actual time=0.104..58.852 rows=1011 loops=3)
+                    Filter: ((salary_avg_usd IS NOT NULL) AND ('Rust'::text = ANY ((skills)::text[])))
+                    Rows Removed by Filter: 332322
+                    Buffers: shared hit=10443 read=27195
+Planning Time: 0.047 ms
+Execution Time: 61.548 ms
